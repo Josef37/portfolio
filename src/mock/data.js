@@ -16,17 +16,18 @@ export const heroData = {
 
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: `Undergrad in mathematics (major) and computer science (minor). Finishing February 2021`,
+  paragraphOne: `Undergrad in mathematics (major) and computer science (minor). Finishing February 2021.`,
   paragraphTwo:
     'Love for problem solving and computers. Ranked high in many national chamionships (mathematics and computer science).',
-  paragraphThree: '',
+  paragraphThree:
+    'I work diligently and am a fan of clean code, trying to improve my craft every day.',
   resume: 'https://www.resumemaker.online/es.php',
 };
 
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'createrawvision.jpg',
     title: 'CreateRawVision',
     info: 'WordPress Website with member area.',
     info2: '',
@@ -35,7 +36,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'minesweeper.jpg',
     title: 'Minesweeper with Solver',
     info:
       'This project is a simple minesweeper game with an automatic solver, which computes a probability distribution of mines.',
@@ -45,7 +46,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'react-shop.jpg',
     title: 'React Shop',
     info: 'Learning React by building an e-commerce platform',
     info2: 'uses redux-toolkit and redux-saga',
@@ -54,7 +55,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'post-planner.jpg',
     title: 'Post Planner',
     info: 'An Electron app for managing posts for social media across different profiles',
     info2: `I've done this project without any framework, which got me to respect the value those frameworks provide 😄`,
@@ -63,7 +64,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'google-code-jam-2020-certificate.jpg',
     title: 'Google Coding Competitions',
     info: `Attempting Google's Coding Competitions with my favorite scientific programming language: Julia!`,
     info2: `Qualified for Round 2 in 2020, but couldn't participate due to family matters`,
@@ -72,7 +73,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'mailchimp-cleaning.jpg',
     title: 'Mailchimp Inactive Subscriber Cleaning',
     info: `Remove inactive subscribers by sending a campaign with a confirmation link to tagged subscribers`,
     info2: '',
@@ -81,23 +82,21 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'threejs-voxel.jpg',
     title: 'Three.js Voxel Game',
     info: `Learning 3D with three.js by building a voxel game`,
     info2: '',
     url: '',
-    repo: 'https://github.com/Josef37/socketio-chat',
+    repo: 'https://github.com/Josef37/three-js-voxel-game',
   },
 ];
 
-// CONTACT DATA
 export const contactData = {
   cta: 'Would you like to work with me? Awesome!',
   btn: 'Send Me an E-Mail',
   email: 'josef.wittmann@tutanota.com',
 };
 
-// FOOTER DATA
 export const footerData = {
   networks: [
     {
