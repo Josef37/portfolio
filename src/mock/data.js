@@ -10,7 +10,7 @@ export const heroData = {
   title: 'Hi, my name is',
   name: 'Josef Wittmann',
   subtitle1: `I'm a Software Developer`,
-  subtitle2: `and B.Sc. in Mathematics`,
+  subtitle2: `and BSc in Mathematics`,
   cta: 'Curious to know more?',
 };
 
@@ -21,7 +21,7 @@ export const aboutData = {
     'Love for problem solving and computers. Ranked high in many national chamionships (mathematics and computer science).',
   paragraphThree:
     'I work diligently and am a fan of clean code, trying to improve my craft every day.',
-  resume: 'https://www.resumemaker.online/es.php',
+  resume: 'resume.pdf',
 };
 
 export const projectsData = [
