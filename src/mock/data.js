@@ -30,7 +30,7 @@ export const projectsData = [
     img: 'createrawvision.jpg',
     title: 'CreateRawVision',
     info: 'WordPress Website with member area.',
-    info2: '',
+    info2: 'Currently supports over 100 members and over 1000 daily visitors.',
     url: 'https://createrawvision.de',
     repo: 'https://github.com/createrawvision/createrawvision',
   },
