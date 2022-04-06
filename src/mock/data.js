@@ -9,18 +9,18 @@ export const headData = {
 export const heroData = {
   title: 'Hi, my name is',
   name: 'Josef Wittmann',
-  subtitle1: `I'm a Software Developer`,
-  subtitle2: `and BSc in Mathematics.`,
+  subtitle1: `I'm a Full Stack Software Developer`,
+  subtitle2: `and a Bachelor of Science in Mathematics.`,
   cta: 'Curious to know more?',
 };
 
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: `Undergrad in mathematics (major) and computer science (minor).`,
+  paragraphOne: `Bachelor of Science in Mathematics, with a minor in Computer Science.`,
   paragraphTwo:
-    'Love for problem solving and computers. Ranked high in many national chamionships (mathematics and computer science).',
+    'I have a love for problem solving and computers. Ranked high in many national chamionships (Mathematics and Computer Science).',
   paragraphThree:
-    'I work diligently and am a fan of clean code, trying to improve my craft every day.',
+    'I work diligently and am dedicated to writing clean code, trying to improve my craft every day.',
   resume: 'resume.pdf',
 };
 
