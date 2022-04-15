@@ -100,10 +100,12 @@ export const projectsData = [
   },
 ];
 
+const linkedinUrl = 'https://www.linkedin.com/in/josef-wittmann-96a342195/';
+
 export const contactData = {
   cta: 'Would you like to work with me? Awesome!',
-  btn: 'Send Me an E-Mail',
-  email: 'josef.wittmann@tutanota.com',
+  btn: 'Send Me a Message',
+  btnUrl: linkedinUrl,
 };
 
 export const footerData = {
@@ -111,7 +113,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'linkedin',
-      url: 'https://www.linkedin.com/in/josef-wittmann-96a342195/',
+      url: linkedinUrl,
     },
     {
       id: nanoid(),
