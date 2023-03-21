@@ -18,7 +18,7 @@ export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: `Bachelor of Science in Mathematics, with a minor in Computer Science.`,
   paragraphTwo:
-    'I have a love for problem solving and computers. Ranked high in many national chamionships (Mathematics and Computer Science).',
+    'I have a love for problem solving and computers. Ranked high in many national championships (Mathematics and Computer Science).',
   paragraphThree:
     'I work diligently and am dedicated to writing clean code, trying to improve my craft every day.',
   resume: 'resume.pdf',
@@ -27,21 +27,21 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'createrawvision.jpg',
-    title: 'CreateRawVision',
-    info: 'WordPress Website with member area.',
-    info2: 'Currently supports over 100 members and over 1000 daily visitors.',
-    url: 'https://createrawvision.de',
-    repo: 'https://github.com/createrawvision/createrawvision',
-  },
-  {
-    id: nanoid(),
     img: 'bachelor-thesis.jpg',
     title: 'Extension Complexity of Convex n-Gons',
     info: 'My bachelor thesis in mathematics at the Technical University of Munich.',
     info2: 'Supervised by Prof. Dr. Stefan Weltge.',
     url: 'bachelor-thesis.pdf',
     repo: 'https://github.com/Josef37/extension-complexity-of-convex-n-gons',
+  },
+  {
+    id: nanoid(),
+    img: 'createrawvision.jpg',
+    title: 'CreateRawVision',
+    info: 'WordPress Website with member area.',
+    info2: 'Currently supports over 100 members and over 1000 daily visitors.',
+    url: 'https://createrawvision.de',
+    repo: '',
   },
   {
     id: nanoid(),
