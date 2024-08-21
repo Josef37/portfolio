@@ -11,7 +11,7 @@ export const heroData = {
   name: 'Josef Wittmann',
   subtitle1: `I'm a Full Stack Software Developer`,
   subtitle2: `and a Bachelor of Science in Mathematics.`,
-  cta: 'Curious to know more?',
+  cta: 'Want to know more?',
 };
 
 export const aboutData = {
@@ -20,7 +20,7 @@ export const aboutData = {
   paragraphTwo:
     'I have a love for problem solving and computers. Ranked high in many national championships (Mathematics and Computer Science).',
   paragraphThree:
-    'I work diligently and am dedicated to writing clean code, trying to improve my craft every day.',
+    'I work diligently and am dedicated to writing maintainable code.',
   resume: 'resume.pdf',
 };
 
@@ -76,7 +76,7 @@ export const projectsData = [
     img: 'google-code-jam-2020-certificate.jpg',
     title: 'Google Coding Competitions',
     info: `Attempting Google's Coding Competitions with my favorite scientific programming language: Julia!`,
-    info2: `Qualified for Round 2 in 2020, but couldn't participate due to family matters.`,
+    info2: `Qualified for Round 2 in 2020.`,
     url: '',
     repo: 'https://github.com/Josef37/google-coding-competitions',
   },
@@ -100,10 +100,10 @@ export const projectsData = [
   },
 ];
 
-const linkedinUrl = 'https://www.linkedin.com/in/josef-wittmann-96a342195/';
+const linkedinUrl = 'https://www.linkedin.com/in/josef-wittmann/';
 
 export const contactData = {
-  cta: 'Would you like to work with me? Awesome!',
+  cta: 'Would you like to work with me?',
   btn: 'Send Me a Message',
   btnUrl: linkedinUrl,
 };
