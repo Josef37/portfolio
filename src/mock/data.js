@@ -15,12 +15,10 @@ export const heroData = {
 };
 
 export const aboutData = {
-  img: 'profile.jpg',
   paragraphOne: `Bachelor of Science in Mathematics, with a minor in Computer Science.`,
   paragraphTwo:
     'I have a love for problem solving and computers. Ranked high in many national championships (Mathematics and Computer Science).',
-  paragraphThree:
-    'I work diligently and am dedicated to writing maintainable code.',
+  paragraphThree: `I've been working as a web developer for a few years now, trying to write good code.`,
   resume: 'resume.pdf',
 };
 
@@ -36,15 +34,6 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'createrawvision.jpg',
-    title: 'CreateRawVision',
-    info: 'WordPress Website with member area.',
-    info2: 'Currently supports over 100 members and over 1000 daily visitors.',
-    url: 'https://createrawvision.de',
-    repo: '',
-  },
-  {
-    id: nanoid(),
     img: 'minesweeper.jpg',
     title: 'Minesweeper with Solver',
     info:
@@ -52,24 +41,6 @@ export const projectsData = [
     info2: 'Press `P` for probabilities and `S` for solving according to probabilities.',
     url: 'https://josef37.github.io/minesweeper/built/',
     repo: 'https://github.com/Josef37/minesweeper',
-  },
-  {
-    id: nanoid(),
-    img: 'react-shop.jpg',
-    title: 'React Shop',
-    info: 'Learning React by building an e-commerce platform.',
-    info2: 'Uses redux-toolkit and redux-saga.',
-    url: 'https://react-shop-showcase.herokuapp.com/',
-    repo: 'https://github.com/Josef37/react-shop',
-  },
-  {
-    id: nanoid(),
-    img: 'post-planner.jpg',
-    title: 'Post Planner',
-    info: 'An Electron app for managing posts for social media across different profiles.',
-    info2: `I've done this project without any framework, which got me to respect the value those frameworks provide. 😄`,
-    url: '',
-    repo: 'https://github.com/Josef37/post-planner',
   },
   {
     id: nanoid(),
@@ -98,6 +69,24 @@ export const projectsData = [
     url: '',
     repo: 'https://github.com/Josef37/three-js-voxel-game',
   },
+  {
+    id: nanoid(),
+    img: 'table-tennis-tournament-handicap.jpg',
+    title: 'Table Tennis Tournament Handicap',
+    info: `Fun little idea on how to make our club tournament more fair.`,
+    info2: 'Using basic probability theory and player rankings to introduce handicaps.',
+    url: '',
+    repo: 'https://github.com/Josef37/table-tennis-tournament-handicap',
+  },
+  {
+    id: nanoid(),
+    img: 'screeps-min-cut-wall.jpg',
+    title: 'Screeps Wall Placement',
+    info: `Re-useable script for optimal wall placement in the programming game Screeps.`,
+    info2: `Using Dinic's algorithm and the max-flow min-cut theorem.`,
+    url: '',
+    repo: 'https://github.com/Josef37/screeps-min-cut-wall',
+  },
 ];
 
 const linkedinUrl = 'https://www.linkedin.com/in/josef-wittmann/';
@@ -125,5 +114,5 @@ export const footerData = {
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false,
 };
