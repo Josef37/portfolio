@@ -5,7 +5,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,5 +31,6 @@ module.exports = {
         icon: 'src/images/favicon.png',
       },
     },
+    // `gatsby-plugin-offline`,
   ],
 };
