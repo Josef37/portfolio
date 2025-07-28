@@ -36,8 +36,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'minesweeper.jpg',
     title: 'Minesweeper with Solver',
-    info:
-      'This project is a simple minesweeper game with an automatic solver, which computes a probability distribution of mines.',
+    info: 'This project is a simple minesweeper game with an automatic solver, which computes a probability distribution of mines.',
     info2: 'Press `P` for probabilities and `S` for solving according to probabilities.',
     url: 'https://josef37.github.io/minesweeper/built/',
     repo: 'https://github.com/Josef37/minesweeper',
@@ -110,9 +109,4 @@ export const footerData = {
       url: 'https://github.com/Josef37',
     },
   ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: false,
 };

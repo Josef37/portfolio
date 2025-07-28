@@ -1,9 +1,8 @@
 import React, { useMemo } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-const useProjectImage = (filename) => {
+const useProjectImage = (filename: string) => {
   const data = useStaticQuery(graphql`
     query {
       images: allFile(filter: { sourceInstanceName: { eq: "projectImages" } }) {
@@ -18,18 +17,22 @@ const useProjectImage = (filename) => {
   `);
 
   return useMemo(
-    () => getImage(data.images.nodes.find(({ relativePath }) => relativePath === filename)),
+    () => getImage(data.images.nodes.find(({ relativePath }: any) => relativePath === filename)),
     [data.images.nodes, filename]
   );
 };
 
-const ProjectImg = ({ filename, alt }) => (
-  <GatsbyImage alt={alt} image={useProjectImage(filename)} />
-);
+interface ProjectImgProps {
+  filename: string;
+  alt: string;
+}
 
-ProjectImg.propTypes = {
-  filename: PropTypes.string,
-  alt: PropTypes.string,
+const ProjectImage = ({ filename, alt }: ProjectImgProps) => {
+  const image = useProjectImage(filename);
+
+  if (!image) return null;
+
+  return <GatsbyImage alt={alt} image={image} />;
 };
 
-export default ProjectImg;
+export default ProjectImage;

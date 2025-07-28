@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { Fade } from 'react-swift-reveal';
 import { Container } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import PortfolioContext from '../context/context';
+import Title from './Title';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
+  if (!contact) return;
   const { cta, btn, btnUrl } = contact;
 
   return (

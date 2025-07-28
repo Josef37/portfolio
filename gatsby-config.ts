@@ -1,4 +1,6 @@
-module.exports = {
+import type { GatsbyConfig } from 'gatsby';
+
+const config: GatsbyConfig = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
@@ -33,3 +35,5 @@ module.exports = {
     `gatsby-plugin-offline`,
   ],
 };
+
+export default config;

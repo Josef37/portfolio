@@ -1,16 +1,17 @@
 import React, { useContext } from 'react';
 import { Fade } from 'react-swift-reveal';
-import Tilt from 'react-tilt';
+// import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
-import useIsMobile from '../../hooks/useIsMobile';
+import PortfolioContext from '../context/context';
+import Title from './Title';
+import ProjectImage from './ProjectImage';
+import useIsMobile from '../hooks/useIsMobile';
 
 const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
-
   const isMobile = useIsMobile();
+
+  const { projects } = useContext(PortfolioContext);
+  if (!projects) return null;
 
   return (
     <section id="projects">
@@ -63,7 +64,7 @@ const Projects = () => {
                         aria-label="Project Link"
                         rel="noopener noreferrer"
                       >
-                        <Tilt
+                        {/* <Tilt
                           options={{
                             reverse: false,
                             max: 8,
@@ -75,11 +76,11 @@ const Projects = () => {
                             reset: true,
                             easing: 'cubic-bezier(.03,.98,.52,.99)',
                           }}
-                        >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
+                        > */}
+                        <div data-tilt className="thumbnail rounded">
+                          <ProjectImage alt={title} filename={img} />
+                        </div>
+                        {/* </Tilt> */}
                       </a>
                     </div>
                   </Fade>
