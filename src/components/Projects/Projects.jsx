@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-swift-reveal';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';

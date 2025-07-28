@@ -1,5 +1,5 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-swift-reveal';
 import PropTypes from 'prop-types';
 
 const Title = ({ title }) => (

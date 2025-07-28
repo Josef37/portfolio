@@ -13,7 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^5.3.7",
     "gatsby": "^5.14.5",
     "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-manifest": "^5.14.0",
@@ -22,16 +22,23 @@
     "gatsby-plugin-sharp": "^5.14.0",
     "gatsby-source-filesystem": "^5.14.0",
     "gatsby-transformer-sharp": "^5.14.0",
-    "nanoid": "^3.1.10",
+    "nanoid": "^5.1.5",
     "prop-types": "^15.7.2",
     "react": "^18.3.1",
-    "react-bootstrap": "^1.0.1",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^18.3.1",
     "react-github-btn": "^1.2.0",
-    "react-reveal": "^1.2.2",
     "react-scroll": "^1.9.3",
-    "react-tilt": "^0.1.4",
+    "react-swift-reveal": "^1.2.4",
+    "react-tilt": "^1.0.2",
     "sass": "^1.30.0"
+  },
+  "overrides": {
+    "gatsby": {
+      "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+        "react": "^18.0.0"
+      }
+    }
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-swift-reveal';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import useIsMobile from '../../hooks/useIsMobile';

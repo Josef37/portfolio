@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-swift-reveal';
 
 import { headData } from '../mock/data';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 const Page404 = () => (

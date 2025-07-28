@@ -9,6 +9,7 @@ import Footer from '../components/Footer/Footer';
 import { PortfolioProvider } from '../context/context';
 import { headData, heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 const PageIndex = () => {
