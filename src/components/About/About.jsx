@@ -1,31 +1,21 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
 import Title from '../Title/Title';
 import PortfolioContext from '../../context/context';
+import useIsMobile from '../../hooks/useIsMobile';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
   const { paragraphOne, paragraphTwo, paragraphThree, resume } = about;
 
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
+  const isMobile = useIsMobile();
 
   return (
     <section id="about">
       <Container>
         <Title title="About Me" />
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} distance="30px">
+        <Fade left={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <div className="about-wrapper__info">
             <p className="about-wrapper__info-text">{paragraphOne}</p>
             <p className="about-wrapper__info-text">{paragraphTwo}</p>

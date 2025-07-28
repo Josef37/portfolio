@@ -1,19 +1,16 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import useIsMobile from '../../hooks/useIsMobile';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
 
-  const [isMobile, setIsMobile] = useState(true);
-
-  useEffect(() => {
-    setIsMobile(window.innerWidth <= 770);
-  }, [window.innerWidth]);
+  const isMobile = useIsMobile();
 
   return (
     <section id="projects">

@@ -1,30 +1,20 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import useIsMobile from '../../hooks/useIsMobile';
 
-const Header = () => {
+const Hero = () => {
   const { hero } = useContext(PortfolioContext);
   const { title, name, subtitle1, subtitle2, cta } = hero;
 
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
+  const isMobile = useIsMobile();
 
   return (
     <section id="hero" className="jumbotron">
       <Container>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} distance="30px">
+        <Fade left={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <h1 className="hero-title">
             {title} <span className="text-color-main">{name}</span>
           </h1>
@@ -34,7 +24,7 @@ const Header = () => {
             {subtitle2}
           </p>
         </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} distance="30px">
+        <Fade left={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
@@ -48,4 +38,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;
