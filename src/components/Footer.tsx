@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import PortfolioContext from '../context/context';
 
 const Footer = () => {
@@ -13,22 +15,16 @@ const Footer = () => {
       <Container>
         <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>
-            <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
+            <FontAwesomeIcon icon={faAngleUp} size="2x" />
           </Link>
         </span>
         <div className="social-links">
           {networks &&
             networks.map((network) => {
-              const { id, name, url } = network;
+              const { id, name, icon, url } = network;
               return (
-                <a
-                  key={id}
-                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  aria-label={name}
-                >
-                  <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
+                <a key={id} href={url} rel="noopener noreferrer" target="_blank" aria-label={name}>
+                  <FontAwesomeIcon icon={icon} inverse size="2x" />
                 </a>
               );
             })}

@@ -1,4 +1,5 @@
 import { nanoid } from 'nanoid';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 export const headData = {
   title: 'Josef Wittmann | Software Developer',
@@ -101,11 +102,13 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'linkedin',
+      icon: faLinkedinIn,
       url: linkedinUrl,
     },
     {
       id: nanoid(),
       name: 'github',
+      icon: faGithub,
       url: 'https://github.com/Josef37',
     },
   ],
