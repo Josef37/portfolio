@@ -58,8 +58,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "husky": {
-    "hooks": {
-    }
+    "hooks": {}
   },
   "lint-staged": {
     "*.+(js|jsx)": [
