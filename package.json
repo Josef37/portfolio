@@ -12,6 +12,9 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
+  "engines": {
+    "node": "^22.17.1"
+  },
   "dependencies": {
     "bootstrap": "^5.3.7",
     "gatsby": "^5.14.5",
