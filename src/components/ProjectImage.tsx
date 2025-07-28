@@ -27,7 +27,7 @@ interface ProjectImgProps {
   alt: string;
 }
 
-const ProjectImage = ({ filename, alt }: ProjectImgProps) => {
+const ProjectImage: React.FC<ProjectImgProps> = ({ filename, alt }) => {
   const image = useProjectImage(filename);
 
   if (!image) return null;

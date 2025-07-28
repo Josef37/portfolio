@@ -1,13 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Fade } from 'react-swift-reveal';
 import { Container } from 'react-bootstrap';
 import Title from './Title';
-import PortfolioContext from '../context/context';
+import { about } from '../data/data';
 import useIsMobile from '../hooks/useIsMobile';
 
-const About = () => {
-  const { about } = useContext(PortfolioContext);
-  if (!about) return;
+const About: React.FC = () => {
   const { paragraphOne, paragraphTwo, paragraphThree, resume } = about;
 
   const isMobile = useIsMobile();

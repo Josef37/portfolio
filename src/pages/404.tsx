@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { Container } from 'react-bootstrap';
 import { Fade } from 'react-swift-reveal';
 
-import { headData } from '../mock/data';
+import { head } from '../data/data';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
@@ -31,15 +31,11 @@ const Page404 = () => (
 );
 export default Page404;
 
-export const Head = () => {
-  const { lang } = headData;
-
-  return (
-    <>
-      <meta charSet="utf-8" />
-      <title>Page not found</title>
-      <html lang={lang || 'en'} />
-      <meta name="description" content="Page not found" />
-    </>
-  );
-};
+export const Head = () => (
+  <>
+    <meta charSet="utf-8" />
+    <title>Page not found</title>
+    <html lang={head.lang} />
+    <meta name="description" content="Page not found" />
+  </>
+);

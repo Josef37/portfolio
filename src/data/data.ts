@@ -1,13 +1,13 @@
 import { nanoid } from 'nanoid';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
-export const headData = {
+export const head = {
   title: 'Josef Wittmann | Software Developer',
   lang: 'en',
   description: 'Portfolio website of Josef Wittmann showcasing some projects',
 };
 
-export const heroData = {
+export const hero = {
   title: 'Hi, my name is',
   name: 'Josef Wittmann',
   subtitle1: `I'm a Full Stack Software Developer`,
@@ -15,7 +15,7 @@ export const heroData = {
   cta: 'Want to know more?',
 };
 
-export const aboutData = {
+export const about = {
   paragraphOne: `Bachelor of Science in Mathematics, with a minor in Computer Science.`,
   paragraphTwo:
     'I have a love for problem solving and computers. Ranked high in many national championships (Mathematics and Computer Science).',
@@ -23,7 +23,7 @@ export const aboutData = {
   resume: 'resume.pdf',
 };
 
-export const projectsData = [
+export const projects = [
   {
     id: nanoid(),
     img: 'bachelor-thesis.jpg',
@@ -91,13 +91,13 @@ export const projectsData = [
 
 const linkedinUrl = 'https://www.linkedin.com/in/josef-wittmann/';
 
-export const contactData = {
+export const contact = {
   cta: 'Would you like to work with me?',
   btn: 'Send Me a Message',
   btnUrl: linkedinUrl,
 };
 
-export const footerData = {
+export const footer = {
   networks: [
     {
       id: nanoid(),

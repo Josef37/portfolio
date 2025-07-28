@@ -1,15 +1,12 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Fade } from 'react-swift-reveal';
 import { Link } from 'react-scroll';
-import PortfolioContext from '../context/context';
 import useIsMobile from '../hooks/useIsMobile';
+import { hero } from '../data/data';
 
-const Hero = () => {
-  const { hero } = useContext(PortfolioContext);
-  if (!hero) return null;
+const Hero: React.FC = () => {
   const { title, name, subtitle1, subtitle2, cta } = hero;
-
   const isMobile = useIsMobile();
 
   return (
