@@ -1,8 +1,8 @@
 import React from 'react';
-import { Fade } from 'react-swift-reveal';
 import { Link } from 'react-scroll';
-import useIsMobile from '../hooks/useIsMobile';
+import { Fade } from 'react-swift-reveal';
 import { hero } from '../data/data';
+import useIsMobile from '../hooks/useIsMobile';
 
 const Hero: React.FC = () => {
   const { title, name, subtitle1, subtitle2, cta } = hero;
@@ -20,8 +20,6 @@ const Hero: React.FC = () => {
             <br />
             {subtitle2}
           </p>
-        </Fade>
-        <Fade left={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>

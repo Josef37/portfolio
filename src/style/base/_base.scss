@@ -22,3 +22,14 @@ h1 {
   font-weight: 500;
   line-height: 1.2;
 }
+
+// Styles after JavaScript loaded
+:root.js {
+  // Avoid an initial flash of content before the animation loads.
+  .react-swiftreveal {
+    opacity: 0;
+  }
+}
+// Styles before JavaScript loaded (or is disabled)
+:root.no-js {
+}
