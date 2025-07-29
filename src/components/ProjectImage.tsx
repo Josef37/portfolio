@@ -1,6 +1,6 @@
-import React, { useMemo } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import React, { useMemo } from 'react';
 
 const useProjectImage = (filename: string) => {
   const data = useStaticQuery(graphql`
@@ -17,7 +17,10 @@ const useProjectImage = (filename: string) => {
   `);
 
   return useMemo(
-    () => getImage(data.images.nodes.find(({ relativePath }: any) => relativePath === filename)),
+    () =>
+      getImage(
+        data.images.nodes.find((node: { relativePath: string }) => node.relativePath === filename),
+      ),
     [data.images.nodes, filename],
   );
 };

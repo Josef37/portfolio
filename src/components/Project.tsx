@@ -7,7 +7,7 @@ import ProjectImage from './ProjectImage';
 
 type ProjectProps = (typeof projects)[number];
 
-const Project: React.FC<ProjectProps> = ({ id, title, info, info2, url, repo, img }) => {
+const Project: React.FC<ProjectProps> = ({ title, info, info2, url, repo, img }) => {
   const isMobile = useIsMobile();
 
   return (

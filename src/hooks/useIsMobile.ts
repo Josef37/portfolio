@@ -1,18 +1,24 @@
 import { useEffect, useState } from 'react';
 
+// Can't access `window` during site generation.
 const isBrowser = typeof window !== 'undefined';
 
-const useIsMobile = () => {
-  // Can't use `window` during SSR.
-  if (!isBrowser) {
-    return true;
-  }
+// Defining media queries via relative units (e.g. `rem`)
+// allows the user default font size to be considered in scaling.
+const breakpointInPx = 900;
+const breakpointInRem = breakpointInPx / 16;
+const mediaQuery = `(max-width: ${breakpointInRem}rem)`; // Parentheses are required...
+const mediaQueryList = isBrowser ? window.matchMedia(mediaQuery) : undefined;
 
-  const [isMobile, setIsMobile] = useState(true);
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(mediaQueryList?.matches ?? true);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth <= 770);
-  }, [window.innerWidth]);
+    const onChange = (event: MediaQueryListEvent) => setIsMobile(event.matches);
+
+    mediaQueryList?.addEventListener('change', onChange);
+    return () => mediaQueryList?.removeEventListener('change', onChange);
+  }, []);
 
   return isMobile;
 };
