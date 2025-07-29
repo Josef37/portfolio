@@ -1,8 +1,12 @@
-@use "../abstracts/mixins";
-@use "../abstracts/variables";
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
 
 #contact {
-  background-image: linear-gradient(135deg, variables.$primary-color 0%, variables.$secondary-color 100%);
+  background-image: linear-gradient(
+    135deg,
+    variables.$primary-color 0%,
+    variables.$secondary-color 100%
+  );
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   padding: 15rem 0 10rem 0;
@@ -10,7 +14,7 @@
   margin-bottom: -1px;
   color: variables.$white-color;
 
-  @include mixins.respond(tab-land) {
+  @include mixins.tablet-landscape {
     padding: 10rem 0;
     clip-path: none;
     margin-top: 0;
@@ -31,7 +35,7 @@
       font-size: 2.4rem;
 
       // Responsive for contact text
-      @include mixins.respond(phone) {
+      @include mixins.phone {
         font-size: 2rem;
       }
     }

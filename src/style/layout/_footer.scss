@@ -7,8 +7,8 @@
   color: variables.$white-color;
   padding: 4.8rem 0;
 
-  @include mixins.respond(phone) {
-    border: 0px;
+  @include mixins.phone {
+    border: 0;
   }
 
   &__text {
@@ -36,7 +36,7 @@
     margin-bottom: 1rem;
     border: 0;
     width: 50%;
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-top: 0.2rem solid rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -58,7 +58,7 @@
     transition: all 0.2s ease-in;
 
     &:hover {
-      transform: translateY(-2px);
+      transform: translateY(-0.2rem);
     }
   }
 }

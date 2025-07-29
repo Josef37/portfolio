@@ -1,5 +1,5 @@
-@use "../abstracts/mixins";
-@use "../abstracts/variables";
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
@@ -26,13 +26,13 @@ a:hover {
 }
 
 .section-title {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 4.5rem;
   font-size: variables.$big-font-size;
   font-weight: bold;
   text-transform: uppercase;
 
-  @include mixins.respond(phone) {
+  @include mixins.phone {
     font-size: 2.8rem;
   }
 }
@@ -42,18 +42,22 @@ a:hover {
 }
 
 .text-color-main {
-  background-image: linear-gradient(135deg, variables.$primary-color 0%, variables.$secondary-color 100%);
+  background-image: linear-gradient(
+    135deg,
+    variables.$primary-color 0%,
+    variables.$secondary-color 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   // Responsive text purple style
-  @include mixins.respond(phone) {
+  @include mixins.phone {
     background-image: none;
     -webkit-text-fill-color: variables.$secondary-color;
   }
 
   &:hover {
-    transform: translateX(2px);
+    transform: translateX(0.25rem);
   }
 }
 
