@@ -6,10 +6,11 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "lint": "eslint ./src",
+    "format": "eslint ./src --fix",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "engines": {
@@ -44,10 +45,18 @@
     }
   },
   "devDependencies": {
+    "@eslint/js": "^9.32.0",
     "@types/node": "^18.19.120",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@types/react-scroll": "^1.8.10",
-    "typescript": "^5.8.3"
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0"
   }
 }
