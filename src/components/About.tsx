@@ -11,7 +11,7 @@ const About: React.FC = () => {
 
   return (
     <section id="about">
-      <div className='container'>
+      <div className="container">
         <Title title="About Me" />
         <Fade left={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <div className="about-wrapper__info">

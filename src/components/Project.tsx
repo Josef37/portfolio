@@ -1,9 +1,9 @@
 import React from 'react';
-import { Fade } from 'react-swift-reveal';
 import Tilt from 'react-parallax-tilt';
-import ProjectImage from './ProjectImage';
-import useIsMobile from '../hooks/useIsMobile';
+import { Fade } from 'react-swift-reveal';
 import type { projects } from '../data/data';
+import useIsMobile from '../hooks/useIsMobile';
+import ProjectImage from './ProjectImage';
 
 type ProjectProps = (typeof projects)[number];
 
@@ -47,12 +47,7 @@ const Project: React.FC<ProjectProps> = ({ id, title, info, info2, url, repo, im
       <div className="project-wrapper__right">
         <Fade right={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <div className="project-wrapper__image">
-            <Tilt
-              tiltReverse
-              tiltMaxAngleX={5}
-              tiltMaxAngleY={5}
-              transitionSpeed={2000}
-            >
+            <Tilt tiltReverse tiltMaxAngleX={5} tiltMaxAngleY={5} transitionSpeed={2000}>
               <div data-tilt className="thumbnail">
                 <ProjectImage alt={title} filename={img} />
               </div>

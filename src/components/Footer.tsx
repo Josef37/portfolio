@@ -6,7 +6,7 @@ import { footer } from '../data/data';
 
 const Footer: React.FC = () => (
   <footer className="footer navbar-static-bottom">
-    <div className='container'>
+    <div className="container">
       <span className="back-to-top">
         <Link to="hero" smooth duration={1000}>
           <FontAwesomeIcon icon={faAngleUp} size="2x" />

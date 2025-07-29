@@ -1,11 +1,11 @@
 import React from 'react';
 import { Fade } from 'react-swift-reveal';
-import Title from './Title';
 import { contact } from '../data/data';
+import Title from './Title';
 
 const Contact: React.FC = () => (
   <section id="contact">
-    <div className='container'>
+    <div className="container">
       <Title title="Contact" />
       <Fade bottom duration={1000} distance="30px">
         <div className="contact-wrapper">

@@ -18,7 +18,7 @@ const useProjectImage = (filename: string) => {
 
   return useMemo(
     () => getImage(data.images.nodes.find(({ relativePath }: any) => relativePath === filename)),
-    [data.images.nodes, filename]
+    [data.images.nodes, filename],
   );
 };
 

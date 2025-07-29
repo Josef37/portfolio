@@ -8,7 +8,7 @@ import '../style/main.scss';
 
 const Page404 = () => (
   <section id="hero" className="jumbotron">
-    <div className='container'>
+    <div className="container">
       <Fade bottom duration={1000} distance="30px">
         <h1 className="hero-title text-center">
           Sorry, this path does not exist{' '}
