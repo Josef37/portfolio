@@ -56,3 +56,9 @@ a:hover {
     transform: translateX(2px);
   }
 }
+
+.text-secondary {
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: variables.$italic-color;
+}

@@ -4,11 +4,9 @@
 
 #about {
   background-color: variables.$primary-color;
-  background-image: linear-gradient(
-    135deg,
-    variables.$primary-color 0%,
-    variables.$secondary-color 100%
-  );
+  background-image: linear-gradient(135deg,
+      variables.$primary-color 0%,
+      variables.$secondary-color 100%);
   color: variables.$white-color;
   height: 100%;
   border-top: 0px;
@@ -36,6 +34,7 @@
       @include mixins.respond(tab-port) {
         padding-bottom: 6.4rem;
       }
+
       @include mixins.respond(tab-land) {
         height: 100%;
       }
@@ -47,7 +46,7 @@
       justify-content: center;
       flex-direction: column;
 
-      @include mixins.respond(phone) {
+      @include mixins.respond(tab-port) {
         align-items: center;
       }
 
@@ -55,10 +54,6 @@
         text-align: left;
 
         @include mixins.respond(tab-port) {
-          font-size: 1.5rem;
-          text-align: center;
-        }
-        @include mixins.respond(phone) {
           font-size: 1.6rem;
           text-align: center;
         }
@@ -80,6 +75,11 @@
           }
         }
       }
+    }
+
+    &__button {
+      display: flex;
+      margin-top: 1rem;
     }
   }
 }

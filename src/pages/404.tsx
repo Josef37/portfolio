@@ -1,16 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Container } from 'react-bootstrap';
 import { Fade } from 'react-swift-reveal';
 
 import { head } from '../data/data';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 const Page404 = () => (
   <section id="hero" className="jumbotron">
-    <Container>
+    <div className='container'>
       <Fade bottom duration={1000} distance="30px">
         <h1 className="hero-title text-center">
           Sorry, this path does not exist{' '}
@@ -20,13 +18,13 @@ const Page404 = () => (
         </h1>
       </Fade>
       <Fade bottom duration={1000} distance="30px">
-        <p className="hero-cta justify-content-center">
+        <p className="hero-cta">
           <Link className="cta-btn cta-btn--hero" to="/">
             Go back
           </Link>
         </p>
       </Fade>
-    </Container>
+    </div>
   </section>
 );
 export default Page404;

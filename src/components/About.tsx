@@ -1,6 +1,5 @@
 import React from 'react';
 import { Fade } from 'react-swift-reveal';
-import { Container } from 'react-bootstrap';
 import Title from './Title';
 import { about } from '../data/data';
 import useIsMobile from '../hooks/useIsMobile';
@@ -12,7 +11,7 @@ const About: React.FC = () => {
 
   return (
     <section id="about">
-      <Container>
+      <div className='container'>
         <Title title="About Me" />
         <Fade left={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <div className="about-wrapper__info">
@@ -22,7 +21,7 @@ const About: React.FC = () => {
               </p>
             ))}
             {
-              <span className="d-flex mt-3">
+              <span className="about-wrapper__button">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -35,7 +34,7 @@ const About: React.FC = () => {
             }
           </div>
         </Fade>
-      </Container>
+      </div>
     </section>
   );
 };

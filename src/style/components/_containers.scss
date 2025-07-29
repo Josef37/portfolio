@@ -1,0 +1,14 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.container {
+    padding: 0 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    width: 90%;
+
+    @include mixins.respond(phone) {
+        width: auto;
+    }
+}

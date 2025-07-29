@@ -1,7 +1,6 @@
 import React from 'react';
 import { Fade } from 'react-swift-reveal';
 // import Tilt from 'react-tilt';
-import { Row, Col } from 'react-bootstrap';
 import ProjectImage from './ProjectImage';
 import useIsMobile from '../hooks/useIsMobile';
 import type { projects } from '../data/data';
@@ -12,14 +11,14 @@ const Project: React.FC<ProjectProps> = ({ id, title, info, info2, url, repo, im
   const isMobile = useIsMobile();
 
   return (
-    <Row key={id}>
-      <Col lg={4} sm={12}>
+    <div className="project-wrapper__row">
+      <div className="project-wrapper__left">
         <Fade left={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <div className="project-wrapper__text">
             <h3 className="project-wrapper__text-title">{title}</h3>
             <div>
               <p>{info}</p>
-              <p className="mb-4 font-italic text-secondary">{info2}</p>
+              <p className="text-secondary">{info2}</p>
             </div>
             {url && (
               <a
@@ -44,8 +43,8 @@ const Project: React.FC<ProjectProps> = ({ id, title, info, info2, url, repo, im
             )}
           </div>
         </Fade>
-      </Col>
-      <Col lg={8} sm={12}>
+      </div>
+      <div className="project-wrapper__right">
         <Fade right={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <div className="project-wrapper__image">
             {/* <Tilt
@@ -61,14 +60,14 @@ const Project: React.FC<ProjectProps> = ({ id, title, info, info2, url, repo, im
             easing: 'cubic-bezier(.03,.98,.52,.99)',
           }}
         > */}
-            <div data-tilt className="thumbnail rounded">
+            <div data-tilt className="thumbnail">
               <ProjectImage alt={title} filename={img} />
             </div>
             {/* </Tilt> */}
           </div>
         </Fade>
-      </Col>
-    </Row>
+      </div>
+    </div>
   );
 };
 

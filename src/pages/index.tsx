@@ -7,7 +7,6 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import { head } from '../data/data';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 const PageIndex: React.FC = () => (

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
@@ -7,7 +6,7 @@ import { footer } from '../data/data';
 
 const Footer: React.FC = () => (
   <footer className="footer navbar-static-bottom">
-    <Container>
+    <div className='container'>
       <span className="back-to-top">
         <Link to="hero" smooth duration={1000}>
           <FontAwesomeIcon icon={faAngleUp} size="2x" />
@@ -30,7 +29,7 @@ const Footer: React.FC = () => (
           Jacobo Martínez
         </a>
       </p>
-    </Container>
+    </div>
   </footer>
 );
 
