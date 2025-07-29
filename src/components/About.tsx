@@ -6,7 +6,7 @@ import { about } from '../data/data';
 import useIsMobile from '../hooks/useIsMobile';
 
 const About: React.FC = () => {
-  const { paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { paragraphs, resume } = about;
 
   const isMobile = useIsMobile();
 
@@ -16,10 +16,12 @@ const About: React.FC = () => {
         <Title title="About Me" />
         <Fade left={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <div className="about-wrapper__info">
-            <p className="about-wrapper__info-text">{paragraphOne}</p>
-            <p className="about-wrapper__info-text">{paragraphTwo}</p>
-            <p className="about-wrapper__info-text">{paragraphThree}</p>
-            {resume && (
+            {paragraphs.map((paragraph, index) => (
+              <p className="about-wrapper__info-text" key={index}>
+                {paragraph}
+              </p>
+            ))}
+            {
               <span className="d-flex mt-3">
                 <a
                   target="_blank"
@@ -30,7 +32,7 @@ const About: React.FC = () => {
                   Résumé
                 </a>
               </span>
-            )}
+            }
           </div>
         </Fade>
       </Container>

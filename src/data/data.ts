@@ -16,10 +16,11 @@ export const hero = {
 };
 
 export const about = {
-  paragraphOne: `Bachelor of Science in Mathematics, with a minor in Computer Science.`,
-  paragraphTwo:
+  paragraphs: [
+    `Bachelor of Science in Mathematics, with a minor in Computer Science.`,
     'I have a love for problem solving and computers. Ranked high in many national championships (Mathematics and Computer Science).',
-  paragraphThree: `I've been working as a web developer for a few years now, trying to write good code.`,
+    `I've been working as a web developer for a few years now, trying to write good code.`,
+  ],
   resume: 'resume.pdf',
 };
 
