@@ -1,28 +1,22 @@
+@use 'sass:math';
+
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
 #hero {
   min-height: 100vh;
   height: 100vh;
   display: flex;
   align-items: center;
-  border-bottom: 0px;
-  background: $white-color;
+  border-bottom: 0;
+  background: variables.$white-color;
   font-weight: 400;
-  color: $dark-blue-text;
+  color: variables.$dark-blue-text;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
 
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
-
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
-
-  @include respond(phone) {
-    padding: 0rem $default-font-size;
+  @include mixins.phone {
+    padding: 0rem variables.$default-font-size;
   }
 
   @mixin hero-text($base-size: 5.6rem) {
@@ -31,19 +25,17 @@
     margin-bottom: 3.2rem;
     text-align: left;
 
-    @include respond(tab-land) {
-      font-size: $base-size / 5.6 * 4;
+    @include mixins.tablet-landscape {
+      font-size: math.div($base-size, 5.6) * 4;
     }
-    @include respond(tab-port) {
-      font-size: $base-size / 5.6 * 3.6;
+
+    @include mixins.tablet-portrait {
+      font-size: math.div($base-size, 5.6) * 3.6;
       text-align: center;
     }
-    @include respond(phone) {
-      font-size: $base-size / 5.6 * 3.5;
-      line-height: 1.5;
-    }
-    @include respond(phone-xs) {
-      font-size: $base-size / 5.6 * 2.8;
+
+    @include mixins.phone-small {
+      font-size: math.div($base-size, 5.6) * 2.8;
     }
   }
 
@@ -57,15 +49,16 @@
 
   .hero-cta {
     display: flex;
+    justify-content: start;
 
-    @include respond(tab-port) {
+    @include mixins.tablet-portrait {
       justify-content: center;
     }
 
     & a {
       font-size: 2.4rem;
 
-      @include respond(phone) {
+      @include mixins.phone {
         font-size: 2rem;
       }
     }
