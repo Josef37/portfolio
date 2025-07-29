@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade } from 'react-swift-reveal';
-// import Tilt from 'react-tilt';
+import Tilt from 'react-parallax-tilt';
 import ProjectImage from './ProjectImage';
 import useIsMobile from '../hooks/useIsMobile';
 import type { projects } from '../data/data';
@@ -47,23 +47,16 @@ const Project: React.FC<ProjectProps> = ({ id, title, info, info2, url, repo, im
       <div className="project-wrapper__right">
         <Fade right={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <div className="project-wrapper__image">
-            {/* <Tilt
-          options={{
-            reverse: false,
-            max: 8,
-            perspective: 1000,
-            scale: 1,
-            speed: 300,
-            transition: true,
-            axis: null,
-            reset: true,
-            easing: 'cubic-bezier(.03,.98,.52,.99)',
-          }}
-        > */}
-            <div data-tilt className="thumbnail">
-              <ProjectImage alt={title} filename={img} />
-            </div>
-            {/* </Tilt> */}
+            <Tilt
+              tiltReverse
+              tiltMaxAngleX={5}
+              tiltMaxAngleY={5}
+              transitionSpeed={2000}
+            >
+              <div data-tilt className="thumbnail">
+                <ProjectImage alt={title} filename={img} />
+              </div>
+            </Tilt>
           </div>
         </Fade>
       </div>
