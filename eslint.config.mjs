@@ -1,6 +1,7 @@
 // @ts-check
 
 import eslint from '@eslint/js';
+import { defineConfig, globalIgnores } from 'eslint/config';
 import prettierRecommended from 'eslint-plugin-prettier/recommended';
 import react from 'eslint-plugin-react';
 import { configs as reactHooksConfig } from 'eslint-plugin-react-hooks';
@@ -18,4 +19,5 @@ export default tseslint.config(
     },
   },
   prettierRecommended,
+  defineConfig(globalIgnores(['public/', '.cache/'])),
 );
