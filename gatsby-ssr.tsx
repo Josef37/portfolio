@@ -3,14 +3,9 @@ import React from 'react';
 
 const fontFiles = ['Montserrat-Latin.woff2', 'Montserrat-Latin-Italic.woff2'];
 
-export const onRenderBody: GatsbySSR['onRenderBody'] = ({
-  setHeadComponents,
-  setHtmlAttributes,
-}) => {
+export const onRenderBody: GatsbySSR['onRenderBody'] = ({ setHeadComponents }) => {
   const fontHeadComponents = fontFiles.map(getFontHeadComponent);
   setHeadComponents([...fontHeadComponents]);
-
-  setHtmlAttributes({ className: 'no-js' });
 };
 
 const getFontHeadComponent = (filename: string) => (
