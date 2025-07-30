@@ -5,7 +5,6 @@ const fontFiles = ['Montserrat-Latin.woff2', 'Montserrat-Latin-Italic.woff2'];
 
 export const onRenderBody: GatsbySSR['onRenderBody'] = ({ setHeadComponents }) => {
   const fontHeadComponents = fontFiles.map(getFontHeadComponent);
-
   setHeadComponents([...fontHeadComponents]);
 };
 

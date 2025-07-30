@@ -26,20 +26,19 @@
 
 /* Hero Style */
 .cta-btn--hero {
-  background-image: linear-gradient(
+  $background-gradient: linear-gradient(
     135deg,
     variables.$primary-color 0%,
     variables.$secondary-color 100%
   );
+
+  background-image: $background-gradient;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   border-width: 0.2rem;
   border-style: solid;
-  border-image: linear-gradient(
-    135deg,
-    variables.$primary-color 0%,
-    variables.$secondary-color 100%
-  );
+  border-image: $background-gradient;
   border-image-slice: 1;
   cursor: pointer;
   // Responsive Button hero style
@@ -50,11 +49,7 @@
   }
 
   &::after {
-    background-image: linear-gradient(
-      135deg,
-      variables.$primary-color 0%,
-      variables.$secondary-color 100%
-    );
+    background-image: $background-gradient;
     // Responsive Button hero style
     @include mixins.phone {
       background-image: none;
@@ -92,9 +87,4 @@
       width: 100%;
     }
   }
-}
-
-/* Arrow Button */
-.up i {
-  color: #272727;
 }
