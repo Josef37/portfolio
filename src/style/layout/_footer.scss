@@ -1,6 +1,6 @@
-@use 'sass:color';
-@use '../abstracts/mixins';
-@use '../abstracts/variables';
+@use "sass:color";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
 
 .footer {
   background-color: variables.$dark-grey;
