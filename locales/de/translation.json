@@ -1,0 +1,94 @@
+{
+  "404": {
+    "notFound": "Seite nicht gefunden",
+    "message": "Entschuldigung, diese Seite existiert nicht",
+    "goBack": "Zurück"
+  },
+  "about": {
+    "title": "Über Mich",
+    "text": "Ich bin Bachelor of Science in Mathematik, mit Nebenfach Informatik.\nIch liebe es Dinge auszutüfteln - gerne mithilfe meines Rechners. Damit habe ich in Landes- und Bundeswettbewerben Mathematik und Informatik ziemlich gut abgeschnitten.\nNun arbeite ich seit einigen Jahren als Webentwickler und versuche, guten Code zu schreiben.",
+    "resumeUrl": "/resume.pdf",
+    "resume": "Lebenslauf (Englisch)"
+  },
+  "contact": {
+    "cta": "Möchten Sie mit mir zusammenarbeiten?",
+    "btn": "Senden Sie mir eine Nachricht",
+    "btnUrl": "https://www.linkedin.com/in/josef-wittmann/",
+    "title": "Kontakt"
+  },
+  "footer": {
+    "networks": {
+      "linkedin": {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/josef-wittmann/"
+      },
+      "github": {
+        "name": "GitHub",
+        "url": "https://github.com/Josef37"
+      }
+    },
+    "developedBy": "Vorlage entwickelt von"
+  },
+  "hero": {
+    "title": "Hallo, ich heiße",
+    "name": "Josef Wittmann",
+    "text": "Ich bin Full-Stack Software-Entwickler\nund Bachelor of Science in Mathematik.",
+    "cta": "Mehr über mich"
+  },
+  "projects": {
+    "title": "Projekte",
+    "seeLive": "Live Ansehen",
+    "sourceCode": "Quellcode",
+    "list": {
+      "bachelor": {
+        "img": "bachelor-thesis.jpg",
+        "title": "Erweiterungskomplexität konvexer n-Ecke",
+        "info": "Meine Bachelorarbeit in Mathematik an der Technischen Universität München.",
+        "info2": "Betreut von Prof. Dr. Stefan Weltge.",
+        "demoUrl": "/bachelor-thesis.pdf",
+        "repoURL": "https://github.com/Josef37/extension-complexity-of-convex-n-gons"
+      },
+      "minesweeper": {
+        "img": "minesweeper.jpg",
+        "title": "Minesweeper mit Lösungsalgorithmus",
+        "info": "Ein einfacher Minesweeper-Klon mit automatischem Löser, der eine Wahrscheinlichkeitsverteilung der Minen berechnet.",
+        "info2": "Zum Testen: `P` für Wahrscheinlichkeiten und `S` zum automatischen Lösen.",
+        "demoUrl": "https://josef37.github.io/minesweeper/built/",
+        "repoURL": "https://github.com/Josef37/minesweeper"
+      },
+      "codeJam": {
+        "img": "google-code-jam-2020-certificate.jpg",
+        "title": "Google Coding Competitions",
+        "info": "Teilnahme an Googles Coding Competitions mit meiner wissenschaftlichen Lieblingsprogrammiersprache: Julia!",
+        "info2": "Für Runde 2 im Jahr 2020 qualifiziert.",
+        "repoURL": "https://github.com/Josef37/google-coding-competitions"
+      },
+      "mailchimp": {
+        "img": "mailchimp-cleaning.jpg",
+        "title": "Inaktive Mailchimp Abonnenten Bereinigen",
+        "info": "Entfernt inaktive Abonnenten, indem eine Kampagne mit einem Bestätigungslink an markierte Abonnenten gesendet wird.",
+        "repoURL": "https://github.com/Josef37/mailchimp-subscriber-cleaning"
+      },
+      "voxelGame": {
+        "img": "threejs-voxel.jpg",
+        "title": "Three.js Voxel-Spiel",
+        "info": "3D-Programmierung mit three.js ausprobieren.",
+        "repoURL": "https://github.com/Josef37/three-js-voxel-game"
+      },
+      "tableTennisHandicap": {
+        "img": "table-tennis-tournament-handicap.jpg",
+        "title": "Tischtennis-Turnier Handicap",
+        "info": "Eine interessante Idee, wie man unser Vereinsturnier fairer gestalten kann.",
+        "info2": "Verwendet einfache Wahrscheinlichkeitstheorie und Spielerranglisten zur Berechnung von Handicaps.",
+        "repoURL": "https://github.com/Josef37/table-tennis-tournament-handicap"
+      },
+      "screepsWall": {
+        "img": "screeps-min-cut-wall.jpg",
+        "title": "Optimale Mauerplatzierung in Screeps",
+        "info": "Wiederverwendbares Skript für optimale Mauerplatzierung im Programmierspiel Screeps.",
+        "info2": "Verwendet den Algorithmus von Dinic und das Max-Flow-Min-Cut-Theorem.",
+        "repoURL": "https://github.com/Josef37/screeps-min-cut-wall"
+      }
+    }
+  }
+}

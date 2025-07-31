@@ -1,14 +1,10 @@
-@use 'sass:color';
-@use '../abstracts/mixins';
-@use '../abstracts/variables';
+@use "sass:color";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
 
 #about {
   background-color: variables.$primary-color;
-  background-image: linear-gradient(
-    135deg,
-    variables.$primary-color 0%,
-    variables.$secondary-color 100%
-  );
+  background-image: linear-gradient(135deg, variables.$primary-color 0%, variables.$secondary-color 100%);
   color: variables.$white-color;
   height: 100%;
   border-top: 0;

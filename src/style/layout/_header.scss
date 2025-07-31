@@ -1,0 +1,57 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+header.main-header {
+  --scale: 1;
+
+  @include mixins.tablet-portrait {
+    --scale: 0.9;
+  }
+
+  @include mixins.phone {
+    --scale: 0.75;
+  }
+
+  & {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: calc(var(--scale) * 2rem) calc(var(--scale) * 4rem);
+  }
+
+  .language-switcher {
+    display: inline-flex;
+    flex-direction: row;
+    gap: calc(var(--scale) * 1rem);
+    list-style: none;
+    padding: 0;
+
+    a {
+      display: inline-block;
+      position: relative;
+      padding: calc(var(--scale) * 1rem);
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: calc(var(--scale) * variables.$mid-font-size);
+      color: variables.$primary-color;
+
+      &:hover {
+        color: variables.$secondary-color;
+      }
+
+      &.current-language {
+        &::after {
+          $offset-x: 20%;
+          $offset-y: 17%;
+          border-bottom: calc(var(--scale) * 0.3rem) solid;
+
+          content: "";
+          position: absolute;
+          width: 100% - 2 * $offset-x;
+          left: $offset-x;
+          bottom: $offset-y;
+        }
+      }
+    }
+  }
+}

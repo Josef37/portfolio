@@ -1,13 +1,17 @@
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import { Fade } from 'react-swift-reveal';
-import type { projects } from '../data/data';
 import useIsMobile from '../hooks/useIsMobile';
 import ProjectImage from './ProjectImage';
 
-type ProjectProps = (typeof projects)[number];
+interface ProjectProps {
+  projectKey: string;
+}
 
-const Project: React.FC<ProjectProps> = ({ title, info, info2, url, repo, img }) => {
+const Project: React.FC<ProjectProps> = ({ projectKey }) => {
+  const { t } = useTranslation();
+  const { t: projectT } = useTranslation(undefined, { keyPrefix: `projects.list.${projectKey}` });
   const isMobile = useIsMobile();
 
   return (
@@ -15,30 +19,30 @@ const Project: React.FC<ProjectProps> = ({ title, info, info2, url, repo, img })
       <div className="project-wrapper__left">
         <Fade left={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <div className="project-wrapper__text">
-            <h3 className="project-wrapper__text-title">{title}</h3>
+            <h3 className="project-wrapper__text-title">{projectT('title')}</h3>
             <div>
-              <p>{info}</p>
-              <p className="text-secondary">{info2}</p>
+              <p>{projectT('info')}</p>
+              <p className="text-secondary">{projectT('info2')}</p>
             </div>
-            {url && (
+            {projectT('demoUrl') && (
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-btn cta-btn--hero"
-                href={url}
+                href={projectT('demoUrl')}
               >
-                See Live
+                {t('projects.seeLive')}
               </a>
             )}
 
-            {repo && (
+            {projectT('repoURL') && (
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-btn text-color-main"
-                href={repo}
+                href={projectT('repoURL')}
               >
-                Source Code
+                {t('projects.sourceCode')}
               </a>
             )}
           </div>
@@ -49,7 +53,7 @@ const Project: React.FC<ProjectProps> = ({ title, info, info2, url, repo, img })
           <div className="project-wrapper__image">
             <Tilt tiltReverse tiltMaxAngleX={5} tiltMaxAngleY={5} transitionSpeed={2000}>
               <div data-tilt className="thumbnail">
-                <ProjectImage alt={title} filename={img} />
+                <ProjectImage alt={projectT('title')} filename={projectT('img')} />
               </div>
             </Tilt>
           </div>

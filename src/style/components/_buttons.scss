@@ -1,5 +1,5 @@
-@use '../abstracts/mixins';
-@use '../abstracts/variables';
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
 
 /* Call to Action Button */
 .cta-btn {
@@ -12,7 +12,7 @@
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 0;
@@ -26,11 +26,7 @@
 
 /* Hero Style */
 .cta-btn--hero {
-  $background-gradient: linear-gradient(
-    135deg,
-    variables.$primary-color 0%,
-    variables.$secondary-color 100%
-  );
+  $background-gradient: linear-gradient(135deg, variables.$primary-color 0%, variables.$secondary-color 100%);
 
   background-image: $background-gradient;
   -webkit-background-clip: text;

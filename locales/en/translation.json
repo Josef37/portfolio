@@ -1,0 +1,94 @@
+{
+  "404": {
+    "notFound": "Page not found",
+    "message": "Sorry, this page does not exist",
+    "goBack": "Go back"
+  },
+  "about": {
+    "text": "I'm a Bachelor of Science in Mathematics, with a minor in Computer Science.\nI have a love for problem solving and computers. That's how I ranked high in many national championships (in Mathematics and Computer Science).\nI've been working as a web developer for a few years now, trying to write good code.",
+    "resumeUrl": "/resume.pdf",
+    "resume": "Résumé",
+    "title": "About Me"
+  },
+  "contact": {
+    "cta": "Would you like to work with me?",
+    "btn": "Send Me a Message",
+    "btnUrl": "https://www.linkedin.com/in/josef-wittmann/",
+    "title": "Contact"
+  },
+  "footer": {
+    "networks": {
+      "linkedin": {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/josef-wittmann/"
+      },
+      "github": {
+        "name": "GitHub",
+        "url": "https://github.com/Josef37"
+      }
+    },
+    "developedBy": "Template developed by"
+  },
+  "hero": {
+    "title": "Hi, my name is",
+    "name": "Josef Wittmann",
+    "text": "I'm a Full Stack Software Developer\nand a Bachelor of Science in Mathematics.",
+    "cta": "More about me"
+  },
+  "projects": {
+    "title": "Projects",
+    "seeLive": "See Live",
+    "sourceCode": "Source Code",
+    "list": {
+      "bachelor": {
+        "img": "bachelor-thesis.jpg",
+        "title": "Extension Complexity of Convex n-Gons",
+        "info": "My bachelor thesis in mathematics at the Technical University of Munich.",
+        "info2": "Supervised by Prof. Dr. Stefan Weltge.",
+        "demoUrl": "/bachelor-thesis.pdf",
+        "repoURL": "https://github.com/Josef37/extension-complexity-of-convex-n-gons"
+      },
+      "minesweeper": {
+        "img": "minesweeper.jpg",
+        "title": "Minesweeper with Solver",
+        "info": "This project is a simple minesweeper game with an automatic solver, which computes a probability distribution of mines.",
+        "info2": "Press `P` for probabilities and `S` for solving according to probabilities.",
+        "demoUrl": "https://josef37.github.io/minesweeper/built/",
+        "repoURL": "https://github.com/Josef37/minesweeper"
+      },
+      "codeJam": {
+        "img": "google-code-jam-2020-certificate.jpg",
+        "title": "Google Coding Competitions",
+        "info": "Attempting Google's Coding Competitions with my favorite scientific programming language: Julia!",
+        "info2": "Qualified for Round 2 in 2020.",
+        "repoURL": "https://github.com/Josef37/google-coding-competitions"
+      },
+      "mailchimp": {
+        "img": "mailchimp-cleaning.jpg",
+        "title": "Mailchimp Inactive Subscriber Cleaning",
+        "info": "Remove inactive subscribers by sending a campaign with a confirmation link to tagged subscribers.",
+        "repoURL": "https://github.com/Josef37/mailchimp-subscriber-cleaning"
+      },
+      "voxelGame": {
+        "img": "threejs-voxel.jpg",
+        "title": "Three.js Voxel Game",
+        "info": "Learning 3D with three.js by building a voxel game.",
+        "repoURL": "https://github.com/Josef37/three-js-voxel-game"
+      },
+      "tableTennisHandicap": {
+        "img": "table-tennis-tournament-handicap.jpg",
+        "title": "Table Tennis Tournament Handicap",
+        "info": "Fun little idea on how to make our club tournament more fair.",
+        "info2": "Using basic probability theory and player rankings to introduce handicaps.",
+        "repoURL": "https://github.com/Josef37/table-tennis-tournament-handicap"
+      },
+      "screepsWall": {
+        "img": "screeps-min-cut-wall.jpg",
+        "title": "Screeps Wall Placement",
+        "info": "Re-useable script for optimal wall placement in the programming game Screeps.",
+        "info2": "Using Dinic's algorithm and the max-flow min-cut theorem.",
+        "repoURL": "https://github.com/Josef37/screeps-min-cut-wall"
+      }
+    }
+  }
+}
