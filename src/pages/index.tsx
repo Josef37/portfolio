@@ -1,13 +1,13 @@
 import { graphql } from 'gatsby';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 
-import Hero from '../components/Hero';
 import About from '../components/About';
-import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import { head } from '../data/data';
 import Header from '../components/Header';
+import Hero from '../components/Hero';
+import Projects from '../components/Projects';
 
 import '../style/main.scss';
 
@@ -23,14 +23,21 @@ const PageIndex: React.FC = () => (
 );
 export default PageIndex;
 
-export const Head: React.FC = () => (
-  <>
-    <meta charSet="utf-8" />
-    <title>{head.title}</title>
-    <html lang={head.lang} />
-    <meta name="description" content={head.description} />
-  </>
-);
+export const Head: React.FC = () => {
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
+
+  return (
+    <>
+      <meta charSet="utf-8" />
+      <title>{t('head.title')}</title>
+      <html lang={language} />
+      <meta name="description" content={t('head.description')} />
+    </>
+  );
+};
 
 export const query = graphql`
   query ($language: String!) {

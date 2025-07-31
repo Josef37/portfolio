@@ -43,7 +43,7 @@
     @include hero-text;
   }
 
-  .hero-subtitle {
+  .hero-text {
     @include hero-text(4rem);
   }
 

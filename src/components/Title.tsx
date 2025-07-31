@@ -1,13 +1,9 @@
 import React from 'react';
 import { Fade } from 'react-swift-reveal';
 
-interface TitleProps {
-  title: string;
-}
-
-const Title: React.FC<TitleProps> = ({ title }) => (
+const Title: React.FC<React.PropsWithChildren> = ({ children }) => (
   <Fade duration={1000}>
-    <h2 className="section-title">{title}</h2>
+    <h2 className="section-title">{children}</h2>
   </Fade>
 );
 

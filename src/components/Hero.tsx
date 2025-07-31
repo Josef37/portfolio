@@ -1,29 +1,34 @@
-import React from 'react';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+import React, { Fragment } from 'react';
 import { Link } from 'react-scroll';
 import { Fade } from 'react-swift-reveal';
-import { hero } from '../data/data';
 import useIsMobile from '../hooks/useIsMobile';
 
 const Hero: React.FC = () => {
-  const { title, name, subtitle1, subtitle2, cta } = hero;
+  const { t } = useTranslation();
   const isMobile = useIsMobile();
 
   return (
-    <section id="hero" className="jumbotron">
+    <section id="hero">
       <div className="container">
         <Fade left={!isMobile} bottom={isMobile} duration={1000} distance="30px">
           <h1 className="hero-title">
-            {title} <span className="text-color-main">{name}</span>
+            {t('hero.title')} <span className="text-color-main">{t('hero.name')}</span>
           </h1>
-          <p className="hero-subtitle">
-            {subtitle1}
-            <br />
-            {subtitle2}
+          <p className="hero-text">
+            {t('hero.text')
+              .split('\n')
+              .map((line, index, arr) => (
+                <Fragment key={index}>
+                  {line}
+                  {index + 1 < arr.length ? <br /> : null}
+                </Fragment>
+              ))}
           </p>
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
-                {cta}
+                {t('hero.cta')}
               </Link>
             </span>
           </p>

@@ -54,6 +54,7 @@ const config: GatsbyConfig = {
         i18nextOptions: {
           fallbackLng: defaultLanguage,
           supportedLngs: languages,
+          defaultNS: 'translation',
           interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
           },
