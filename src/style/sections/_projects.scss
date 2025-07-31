@@ -62,20 +62,11 @@
     }
 
     &__image {
-      width: 100%;
-
-      & .thumbnail {
-        border: none;
-        box-shadow:
-          0 0.6rem 1rem rgba(0, 0, 0, 0.08),
-          0 0 0.6rem rgba(0, 0, 0, 0.05);
-
-        @include mixins.phone {
-          border: 0.1rem solid #d2d2d2;
-          border-radius: 0.15rem;
-          box-shadow: none;
-        }
-      }
+      display: inline-block;
+      border: none;
+      box-shadow:
+        0 0.6rem 1rem rgba(0, 0, 0, 0.16),
+        0 0 0.6rem rgba(0, 0, 0, 0.1);
     }
   }
 }
