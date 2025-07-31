@@ -6,7 +6,7 @@ interface TitleProps {
 }
 
 const Title: React.FC<TitleProps> = ({ title }) => (
-  <Fade bottom duration={1000} distance="0px">
+  <Fade duration={1000}>
     <h2 className="section-title">{title}</h2>
   </Fade>
 );
