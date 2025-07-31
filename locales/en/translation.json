@@ -5,7 +5,7 @@
     "goBack": "Go back"
   },
   "about": {
-    "text": "Bachelor of Science in Mathematics, with a minor in Computer Science.\nI have a love for problem solving and computers. Ranked high in many national championships (Mathematics and Computer Science).\nI've been working as a web developer for a few years now, trying to write good code.",
+    "text": "I'm a Bachelor of Science in Mathematics, with a minor in Computer Science.\nI have a love for problem solving and computers. That's how I ranked high in many national championships (in Mathematics and Computer Science).\nI've been working as a web developer for a few years now, trying to write good code.",
     "resumeUrl": "/resume.pdf",
     "resume": "Résumé",
     "title": "About Me"
@@ -20,11 +20,11 @@
     "networks": {
       "linkedin": {
         "name": "LinkedIn",
-        "demoUrl": "https://www.linkedin.com/in/josef-wittmann/"
+        "url": "https://www.linkedin.com/in/josef-wittmann/"
       },
       "github": {
         "name": "GitHub",
-        "demoUrl": "https://github.com/Josef37"
+        "url": "https://github.com/Josef37"
       }
     },
     "developedBy": "Template developed by"
@@ -38,7 +38,7 @@
     "title": "Hi, my name is",
     "name": "Josef Wittmann",
     "text": "I'm a Full Stack Software Developer\nand a Bachelor of Science in Mathematics.",
-    "cta": "Want to know more?"
+    "cta": "More about me"
   },
   "projects": {
     "title": "Projects",
@@ -50,7 +50,7 @@
         "title": "Extension Complexity of Convex n-Gons",
         "info": "My bachelor thesis in mathematics at the Technical University of Munich.",
         "info2": "Supervised by Prof. Dr. Stefan Weltge.",
-        "demoUrl": "bachelor-thesis.pdf",
+        "demoUrl": "/bachelor-thesis.pdf",
         "repoURL": "https://github.com/Josef37/extension-complexity-of-convex-n-gons"
       },
       "minesweeper": {
