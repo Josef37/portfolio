@@ -50,13 +50,15 @@ const Project: React.FC<ProjectProps> = ({ projectKey }) => {
       </div>
       <div className="project-wrapper__right">
         <Fade right={!isMobile} bottom={isMobile} duration={1000} distance="30px">
-          <div className="project-wrapper__image">
-            <Tilt tiltReverse tiltMaxAngleX={5} tiltMaxAngleY={5} transitionSpeed={2000}>
-              <div data-tilt className="thumbnail">
-                <ProjectImage alt={projectT('title')} filename={projectT('img')} />
-              </div>
-            </Tilt>
-          </div>
+          <Tilt
+            tiltReverse
+            tiltMaxAngleX={5}
+            tiltMaxAngleY={5}
+            transitionSpeed={2000}
+            className="project-wrapper__image"
+          >
+            <ProjectImage alt={projectT('title')} filename={projectT('img')} />
+          </Tilt>
         </Fade>
       </div>
     </div>

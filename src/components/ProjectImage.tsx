@@ -9,7 +9,12 @@ const useProjectImage = (filename: string) => {
         nodes {
           relativePath
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, width: 1366)
+            gatsbyImageData(
+              layout: CONSTRAINED
+              width: 720
+              placeholder: DOMINANT_COLOR
+              quality: 80
+            )
           }
         }
       }
