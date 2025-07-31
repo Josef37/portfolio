@@ -29,11 +29,6 @@
     },
     "developedBy": "Vorlage entwickelt von"
   },
-  "head": {
-    "title": "Josef Wittmann | Software-Entwickler",
-    "lang": "de",
-    "description": "Portfolio-Website von Josef Wittmann mit einer Auswahl an Projekten"
-  },
   "hero": {
     "title": "Hallo, ich heiße",
     "name": "Josef Wittmann",

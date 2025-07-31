@@ -1,4 +1,4 @@
-import { graphql, Link } from 'gatsby';
+import { graphql, HeadProps, Link } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 import { Fade } from 'react-swift-reveal';
@@ -35,18 +35,20 @@ const Page404 = () => {
 };
 export default Page404;
 
-export const Head = () => {
-  const {
-    t,
-    i18n: { language },
-  } = useTranslation();
+export const Head: React.FC<HeadProps> = (props) => {
+  // `useTranslation` does not work in the Head API.
+  // https://github.com/microapps/gatsby-plugin-react-i18next/issues/150
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const { data, language } = (props.data as any).headLocales.nodes[0];
+  const t = data ? JSON.parse(data) : {};
 
   return (
     <>
       <meta charSet="utf-8" />
-      <title>{t('404.notFound')}</title>
+      <title>{t.notFound}</title>
       <html lang={language} />
-      <meta name="description" content={t('404.notFound')} />
+      <meta name="description" content={t.notFound} />
     </>
   );
 };
@@ -60,6 +62,12 @@ export const query = graphql`
           data
           language
         }
+      }
+    }
+    headLocales: allLocale(filter: { ns: { eq: "head" }, language: { eq: $language } }) {
+      nodes {
+        data
+        language
       }
     }
   }

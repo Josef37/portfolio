@@ -29,11 +29,6 @@
     },
     "developedBy": "Template developed by"
   },
-  "head": {
-    "title": "Josef Wittmann | Software Developer",
-    "lang": "en",
-    "description": "Portfolio website of Josef Wittmann showcasing some projects"
-  },
   "hero": {
     "title": "Hi, my name is",
     "name": "Josef Wittmann",
