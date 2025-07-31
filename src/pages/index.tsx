@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby';
 import React from 'react';
 
 import Hero from '../components/Hero';
@@ -28,3 +29,17 @@ export const Head: React.FC = () => (
     <meta name="description" content={head.description} />
   </>
 );
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
