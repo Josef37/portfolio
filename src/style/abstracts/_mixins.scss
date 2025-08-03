@@ -13,34 +13,33 @@ Using `rem` instead of `px` allows for a user's default font-size to affect layo
 }
 
 @mixin phone-small {
-  @media (max-width: to-rem(320px)) {
+  @media screen and (max-width: to-rem(320px)) {
     @content;
   }
 }
 @mixin phone {
-  @media (max-width: to-rem(600px)) {
+  @media screen and (max-width: to-rem(600px)) {
     @content;
   }
 }
 @mixin tablet-portrait {
-  @media (max-width: to-rem(900px)) {
+  @media screen and (max-width: to-rem(900px)) {
     @content;
   }
 }
 @mixin tablet-landscape {
-  @media (max-width: to-rem(1200px)) {
+  @media screen and (max-width: to-rem(1200px)) {
     @content;
   }
 }
 @mixin desktop-big {
-  @media (min-width: to-rem(1800px)) {
+  @media screen and (min-width: to-rem(1800px)) {
     @content;
   }
 }
 
-// Border White Mixin
-@mixin section-borders {
-  border: 1.5rem solid #fff;
-  border-top: 0;
-  border-bottom: 0;
+@mixin fits-a4 {
+  @media screen and (min-width: to-rem(210mm)) {
+    @content;
+  }
 }

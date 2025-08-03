@@ -7,8 +7,7 @@
   "about": {
     "title": "Über Mich",
     "text": "Ich bin Bachelor of Science in Mathematik, mit Nebenfach Informatik.\nIch liebe es Dinge auszutüfteln - gerne mithilfe meines Rechners. Damit habe ich in Landes- und Bundeswettbewerben Mathematik und Informatik ziemlich gut abgeschnitten.\nNun arbeite ich seit einigen Jahren als Webentwickler und versuche, guten Code zu schreiben.",
-    "resumeUrl": "/resume.pdf",
-    "resume": "Lebenslauf (Englisch)"
+    "resume": "Lebenslauf"
   },
   "contact": {
     "cta": "Möchten Sie mit mir zusammenarbeiten?",

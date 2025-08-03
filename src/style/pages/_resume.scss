@@ -1,0 +1,162 @@
+@use "sass:math";
+@use "../abstracts/mixins";
+
+$main-color: rgb(39, 99, 153);
+
+$font-size: 10pt;
+
+@function to-em($px) {
+  $pixels-per-em: math.div($font-size, 1em);
+  @return math.div($px, $pixels-per-em);
+}
+
+#resume {
+  font-family: "Poppins", sans-serif;
+  font-size: math.div($font-size, 10px) * 100%;
+  text-align: left;
+
+  p,
+  a {
+    font-size: 1em;
+    margin-bottom: 0.25em;
+  }
+
+  h1 {
+    font-weight: 700;
+    color: $main-color;
+    margin: 0;
+    font-size: 2.4em;
+  }
+  h2,
+  .resume-subtitle,
+  .resume-company {
+    font-weight: 700;
+    font-variant-caps: small-caps;
+  }
+  h2 {
+    margin-top: 0.7em;
+  }
+  .resume-subtitle {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-weight: 700;
+    color: $main-color;
+    margin-bottom: 0;
+    margin-top: 0.7em;
+  }
+
+  section {
+    padding: 0;
+  }
+
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  a,
+  a:link,
+  a:hover,
+  a:visited,
+  a:active {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .resume-job {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mixins.phone {
+      flex-direction: column;
+    }
+
+    .resume-date {
+      font-style: italic;
+    }
+  }
+
+  .resume-icon {
+    color: black;
+    margin: 0 0.6em;
+  }
+
+  @mixin content-as-grid {
+    .resume-content {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      column-gap: 2em;
+      grid-template-areas:
+        ". title"
+        "aside main";
+
+      .resume-title {
+        grid-area: title;
+      }
+      .resume-aside {
+        grid-area: aside;
+      }
+      .resume-main {
+        grid-area: main;
+      }
+
+      .resume-address {
+        text-wrap: nowrap;
+      }
+    }
+  }
+
+  .resume-page {
+    margin: 4rem 6rem;
+
+    @include mixins.phone {
+      margin: 1.5rem;
+    }
+
+    @include mixins.fits-a4 {
+      width: to-em(210mm);
+      min-height: to-em(297mm);
+      padding: to-em(15mm);
+      box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.5);
+      margin: 1em auto;
+
+      @include content-as-grid;
+    }
+  }
+
+  .print-button {
+    text-align: right;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+
+    @include mixins.fits-a4 {
+      border-bottom: none;
+    }
+
+    button {
+      cursor: pointer;
+      padding: 0.3em 0.6em;
+      margin: 1em;
+    }
+  }
+
+  @media print {
+    .resume-page {
+      margin: 0;
+      font-size: 10pt;
+
+      @include content-as-grid;
+    }
+
+    .print-button {
+      display: none !important;
+    }
+  }
+}
+
+@page {
+  size: A4 portrait;
+  margin: 15mm;
+}

@@ -28,7 +28,7 @@ const About: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cta-btn cta-btn--resume"
-                  href={t('about.resumeUrl')}
+                  href="/resume"
                 >
                   {t('about.resume')}
                 </a>
