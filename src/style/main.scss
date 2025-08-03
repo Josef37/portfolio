@@ -1,7 +1,3 @@
-@use "abstracts/mixins";
-@use "abstracts/variables";
-@use "abstracts/helpers";
-
 @use "base/reset";
 @use "base/base";
 @use "base/typography";
@@ -9,13 +5,11 @@
 @use "components/buttons";
 @use "components/containers";
 
-@use "layout/header";
-@use "layout/footer";
-@use "layout/sections";
-
-@use "sections/about";
-@use "sections/contact";
+@use "sections/header";
 @use "sections/hero";
+@use "sections/about";
 @use "sections/projects";
+@use "sections/contact";
+@use "sections/footer";
 
 @use "pages/resume";
