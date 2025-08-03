@@ -120,7 +120,7 @@ $font-size: 10pt;
       width: to-em(210mm);
       min-height: to-em(297mm);
       padding: to-em(15mm);
-      box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.25);
       margin: 1em auto;
 
       @include content-as-grid;
