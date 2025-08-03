@@ -22,7 +22,7 @@ const Project: React.FC<ProjectProps> = ({ projectKey }) => {
             <h3 className="project-wrapper__text-title">{projectT('title')}</h3>
             <div>
               <p>{projectT('info')}</p>
-              <p className="text-secondary">{projectT('info2')}</p>
+              <p className="text-secondary">{projectT('info2', { defaultValue: '' })}</p>
             </div>
             {projectT('demoUrl') && (
               <a
