@@ -4,9 +4,6 @@ import { faEnvelope, faGlobe, faLocationDot } from '@fortawesome/free-solid-svg-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { PropsWithChildren } from 'react';
 
-// Note: Gatsby always loads all styles, regardless of entry-point.
-import '../style/main.scss';
-
 const ExternalLink: React.FC<PropsWithChildren<{ href: string }>> = (props) => (
   <a href={props.href} target="_blank" rel="noopener noreferrer">
     {props.children}

@@ -5,8 +5,6 @@ import { Fade } from 'react-swift-reveal';
 
 import Header from '../components/Header';
 
-import '../style/main.scss';
-
 const Page404 = () => {
   const { t } = useTranslation();
 
