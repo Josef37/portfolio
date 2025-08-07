@@ -1,9 +1,26 @@
 import type { GatsbyConfig } from 'gatsby';
+import type { PluginOptions as I18NextPluginOptions } from 'gatsby-plugin-react-i18next';
+
+const pathPrefix = undefined;
+// We can build with or without `--prefix-paths`, even though the option is set here.
+const withPrefixPathsOption =
+  process.argv.includes(`--prefix-paths`) ||
+  process.env.PREFIX_PATHS === `true` ||
+  process.env.PREFIX_PATHS === `1`;
 
 const config: GatsbyConfig = {
+  pathPrefix,
+
   plugins: [
     `gatsby-plugin-fix-fouc`,
-    `gatsby-plugin-sass`,
+
+    // Styles & Fonts
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        additionalData: `$path-prefix: "${withPrefixPathsOption ? pathPrefix : ''}";`,
+      },
+    },
 
     // Images
     {
@@ -46,7 +63,10 @@ const config: GatsbyConfig = {
             escapeValue: false, // not needed for react as it escapes by default
           },
         },
-      },
+        pathTranslations: {
+          de: { '/resume/': '/lebenslauf/' },
+        },
+      } satisfies I18NextPluginOptions,
     },
 
     // Manifest

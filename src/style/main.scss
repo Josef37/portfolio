@@ -1,3 +1,8 @@
+$path-prefix: "" !default;
+@use "abstracts/variables" with (
+  $path-prefix: $path-prefix
+);
+
 @use "base/reset";
 @use "base/base";
 @use "base/typography";
