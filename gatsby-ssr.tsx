@@ -4,6 +4,7 @@ import React from 'react';
 const fontFiles = ['Montserrat-Latin.woff2', 'Montserrat-Latin-Italic.woff2'];
 
 export const onRenderBody: GatsbySSR['onRenderBody'] = ({ setHeadComponents }) => {
+  const fontFiles = JSON.parse(process.env.FONT_FILES ?? '[]');
   const fontHeadComponents = fontFiles.map(getFontHeadComponent);
   setHeadComponents([...fontHeadComponents]);
 };
