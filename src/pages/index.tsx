@@ -42,20 +42,6 @@ export const Head: React.FC<HeadProps> = (props) => {
 
 export const query = graphql`
   query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    headLocales: allLocale(filter: { ns: { eq: "head" }, language: { eq: $language } }) {
-      nodes {
-        data
-        language
-      }
-    }
+    ...Locales
   }
 `;
