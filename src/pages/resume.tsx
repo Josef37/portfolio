@@ -87,7 +87,7 @@ interface MainItemProps {
   title: string;
   location: string;
   url?: string;
-  time?: { from: Date; to: Date };
+  time?: { from: Date; to?: Date };
   timeOverride?: string;
 }
 const formatDate = (date: Date) => {
@@ -106,7 +106,7 @@ const MainItem: React.FC<PropsWithChildren<MainItemProps>> = (props) => (
       </span>
       <span className="resume-date">
         {props.time
-          ? `${formatDate(props.time.from)} – ${formatDate(props.time.to)}`
+          ? `${formatDate(props.time.from)} – ${props.time.to ? formatDate(props.time.to) : 'present'}`
           : (props.timeOverride ?? '')}
       </span>
     </p>
@@ -120,6 +120,17 @@ const Main: React.FC = () => (
       <h2>Professional Experience</h2>
 
       <ul>
+        <MainItem
+          title="Career Break"
+          location="Health Issues"
+          time={{ from: new Date('2024-07') }}
+        >
+          <p>
+            Had to figure out a health issue that resulted in me being very tired and fatigued.
+            Travelled by bike through Germany after being well again.
+          </p>
+        </MainItem>
+
         <MainItem
           title="Backend Developer"
           location="Ampeers Energy GmbH"
@@ -225,13 +236,6 @@ const Main: React.FC = () => (
           location="Bundeswettbewerb Informatik"
           url="https://bwinf.de/bundeswettbewerb/"
           timeOverride="2016"
-        />
-
-        <MainItem
-          title="Qualified for Round 2 in Google Code Jam"
-          location="Google Code Jam"
-          url="https://codingcompetitions.withgoogle.com/codejam/"
-          timeOverride="2020"
         />
       </ul>
     </section>
