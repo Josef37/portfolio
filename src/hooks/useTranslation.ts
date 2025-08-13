@@ -5,6 +5,6 @@ interface HookOptions {
   keyPrefix: string;
 }
 
-export const useTranslation = (options?: HookOptions): { t: TFunction } => {
+export const useTranslation = (options?: HookOptions): { t: TFunction; language: string } => {
   return useI18next(undefined, options);
 };
