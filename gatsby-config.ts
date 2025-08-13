@@ -52,11 +52,11 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-react-i18next',
       options: {
-        localeJsonSourceName: `locale`,
+        localeJsonSourceName: 'locale',
         languages: ['en', 'de'],
         defaultLanguage: 'en',
-        generateDefaultLanguagePage: true,
-        siteUrl: `https://josefwittmann.dev/`,
+        generateDefaultLanguagePage: false,
+        siteUrl: 'https://josefwittmann.dev/',
         i18nextOptions: {
           defaultNS: 'translation',
           interpolation: {
@@ -66,7 +66,7 @@ const config: GatsbyConfig = {
         pathTranslations: {
           de: { '/resume/': '/lebenslauf/' },
         },
-      } satisfies I18NextPluginOptions,
+      } satisfies Partial<I18NextPluginOptions>,
     },
 
     // Manifest
