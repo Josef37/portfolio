@@ -22,7 +22,7 @@ const Page404 = () => {
             </h1>
             <p className="hero-cta">
               <Link className="cta-btn cta-btn--hero" to="/">
-                {t('404.goBack')}
+                {t('404.goHome')}
               </Link>
             </p>
           </Fade>

@@ -2,7 +2,7 @@
   "404": {
     "notFound": "Seite nicht gefunden",
     "message": "Entschuldigung, diese Seite existiert nicht",
-    "goBack": "Zurück"
+    "goHome": "Zur Startseite"
   },
   "about": {
     "title": "Über Mich",

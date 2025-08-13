@@ -2,7 +2,7 @@
   "404": {
     "notFound": "Page not found",
     "message": "Sorry, this page does not exist",
-    "goBack": "Go back"
+    "goHome": "To the homepage"
   },
   "about": {
     "text": "I'm a Bachelor of Science in Mathematics, with a minor in Computer Science.\nI have a love for problem solving and computers. That's how I ranked high in many national championships (in Mathematics and Computer Science).\nI've been working as a web developer for a few years now, trying to write good code.",
