@@ -1,8 +1,8 @@
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React, { Fragment } from 'react';
 import { Link } from 'react-scroll';
 import { Fade } from 'react-swift-reveal';
 import useIsMobile from '../hooks/useIsMobile';
+import { useTranslation } from '../hooks/useTranslation';
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();

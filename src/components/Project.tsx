@@ -1,8 +1,8 @@
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
 import { Fade } from 'react-swift-reveal';
 import useIsMobile from '../hooks/useIsMobile';
+import { useTranslation } from '../hooks/useTranslation';
 import ProjectImage from './ProjectImage';
 
 interface ProjectProps {
@@ -11,7 +11,7 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ projectKey }) => {
   const { t } = useTranslation();
-  const { t: projectT } = useTranslation(undefined, { keyPrefix: `projects.list.${projectKey}` });
+  const { t: projectT } = useTranslation({ keyPrefix: `projects.list.${projectKey}` });
   const isMobile = useIsMobile();
 
   return (
