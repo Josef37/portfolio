@@ -1,4 +1,4 @@
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 import { Fade } from 'react-swift-reveal';
 import useIsMobile from '../hooks/useIsMobile';
@@ -24,14 +24,9 @@ const About: React.FC = () => {
               ))}
             {
               <span className="about-wrapper__button">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="cta-btn cta-btn--resume"
-                  href="/resume"
-                >
+                <Link className="cta-btn cta-btn--resume" to="/resume">
                   {t('about.resume')}
-                </a>
+                </Link>
               </span>
             }
           </div>
