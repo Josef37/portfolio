@@ -22,12 +22,10 @@ const Title: React.FC = () => {
   const { t } = useTranslation({ keyPrefix: 'resume' });
 
   return (
-    <div className="resume-title">
-      <hgroup>
-        <h1>Josef Wittmann</h1>
-        <p className="resume-subtitle">{t('subtitle')}</p>
-      </hgroup>
-    </div>
+    <hgroup className="resume-title">
+      <h1>Josef Wittmann</h1>
+      <p className="resume-subtitle">{t('subtitle')}</p>
+    </hgroup>
   );
 };
 

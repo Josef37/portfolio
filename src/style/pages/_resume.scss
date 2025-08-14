@@ -18,7 +18,7 @@ $font-size: 10pt;
   p,
   a {
     font-size: 1em;
-    margin-bottom: 0.25em;
+    margin-bottom: 0;
   }
 
   h1 {
@@ -34,16 +34,16 @@ $font-size: 10pt;
     font-variant-caps: small-caps;
   }
   h2 {
-    margin-top: 0.7em;
+    margin: 0.5em auto 0;
   }
   .resume-subtitle {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin: 0;
   }
   h3 {
     font-weight: 700;
     color: $main-color;
-    margin-bottom: 0;
-    margin-top: 0.7em;
+    margin: 0.7em auto 0;
   }
 
   section {
@@ -66,16 +66,29 @@ $font-size: 10pt;
     text-decoration: underline;
   }
 
-  .resume-job {
+  @mixin row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    column-gap: 1em;
     @include mixins.phone {
       flex-direction: column;
     }
+  }
+
+  .resume-title {
+    @include row;
+    & {
+      align-items: start;
+    }
+  }
+
+  .resume-job {
+    @include row;
 
     .resume-date {
       font-style: italic;
+      margin-right: 0.2em;
     }
   }
 

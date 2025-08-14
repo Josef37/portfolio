@@ -107,37 +107,37 @@
       "career-break": {
         "title": "Career Break",
         "location": "Health Issues",
-        "text": "Had to figure out a health issue that resulted in me being very tired and fatigued. Travelled by bike through Germany after being well again."
+        "text": "Had to figure out a health issue that resulted in me being very tired and fatigued. Traveled by bike through Germany after being well again."
       },
       "ampeers": {
         "title": "Backend Developer",
         "location": "Ampeers Energy GmbH",
-        "text": "Main task: Migrating a JavaScript/REST/OracleDB backend service toTypeScript/GraphQL/ArangoDB. Planning, implementing and testing."
+        "text": "Main task: Migrating a JavaScript/REST/OracleDB backend service to TypeScript/GraphQL/ArangoDB. Planning, implementing and testing."
       },
       "cosuno-lead": {
         "title": "Lead Full Stack Developer",
         "location": "Cosuno Ventures GmbH",
-        "text": "Apart from developing, I was responsible for discussing new features with product anddesign, making architectural decisions, reviewing code, unblocking team members andonboarding new team members."
+        "text": "Apart from developing, I was responsible for discussing new features with product and design, making architectural decisions, reviewing code and unblocking and onboarding team members."
       },
       "cosuno": {
         "title": "Full Stack Developer",
         "location": "Cosuno Ventures GmbH",
-        "text": "SaaS for construction projects. Building and testing frontend and backend inTypeScript in an agile team."
+        "text": "Start-up: SaaS for managing construction projects. I was building and testing full features (frontend and backend) in TypeScript in an agile team."
       },
       "qaware": {
         "title": "Working Student",
         "location": "QAware GmbH",
-        "text": "Helping maintain a Java web application for the security checking process for Telekomprojects. My tasks were mostly front-end centered (SASS, jQuery), but also involvedsome bug-fixing on the backend."
+        "text": "Maintenance of a Java web application for the security checking process for Telekom projects. My tasks were mostly frontend centered, but also involved some bug-fixing on the Java backend."
       },
       "createrawvision": {
         "title": "WordPress Developer",
         "location": "CreateRawVision",
-        "text": "Building and maintaining a WordPress Website for more than 100 members and over 1000daily visitors. Notable features include a members area and an integration to a custompayment gateway."
+        "text": "Building and maintaining a WordPress Website for more than 100\u00a0members. Notable features: Members area and integration to a custom payment gateway."
       },
       "tum": {
         "title": "B.Sc. Mathematics major, Computer Science minor",
         "location": "Technical University of Munich",
-        "text": "Final grade: 1.9"
+        "text": "Final grade: 1.9. Main focus: Optimization & Algorithms"
       },
       "wg": {
         "title": "Abitur / A-Levels",
@@ -149,7 +149,7 @@
         "location": "Landeswettbewerb Mathematik Bayern"
       },
       "bwinf": {
-        "title": "Top 100 in national computer science championship 2016",
+        "title": "Top 100 in national computer science championship",
         "location": "Bundeswettbewerb Informatik"
       }
     },
