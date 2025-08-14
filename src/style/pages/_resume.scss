@@ -28,17 +28,12 @@ $font-size: 10pt;
     font-size: 2.4em;
   }
   h2,
-  .resume-subtitle,
   .resume-company {
     font-weight: 700;
     font-variant-caps: small-caps;
   }
   h2 {
     margin: 0.5em auto 0;
-  }
-  .resume-subtitle {
-    font-size: 1.5em;
-    margin: 0;
   }
   h3 {
     font-weight: 700;
@@ -73,13 +68,6 @@ $font-size: 10pt;
     column-gap: 1em;
     @include mixins.phone {
       flex-direction: column;
-    }
-  }
-
-  .resume-title {
-    @include row;
-    & {
-      align-items: start;
     }
   }
 

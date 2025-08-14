@@ -19,13 +19,10 @@ const Icon: React.FC<{ icon: IconProp }> = ({ icon }) => (
 );
 
 const Title: React.FC = () => {
-  const { t } = useTranslation({ keyPrefix: 'resume' });
-
   return (
-    <hgroup className="resume-title">
+    <header className="resume-title">
       <h1>Josef Wittmann</h1>
-      <p className="resume-subtitle">{t('subtitle')}</p>
-    </hgroup>
+    </header>
   );
 };
 
@@ -47,7 +44,7 @@ const Aside: React.FC = () => {
   const { t } = useTranslation({ keyPrefix: 'resume.aside' });
 
   return (
-    <div className="resume-aside">
+    <aside className="resume-aside">
       <h2>{t('info')}</h2>
       <ul>
         <InfoItem title={t('address')} icon={faLocationDot}>
@@ -87,7 +84,7 @@ const Aside: React.FC = () => {
           </p>
         </InfoItem>
       </ul>
-    </div>
+    </aside>
   );
 };
 
@@ -258,11 +255,11 @@ const Page: React.FC = () => (
   <div id="resume">
     <PrintButton />
     <div className="resume-page">
-      <div className="resume-content">
+      <article className="resume-content">
         <Title />
         <Aside />
         <Main />
-      </div>
+      </article>
     </div>
   </div>
 );
