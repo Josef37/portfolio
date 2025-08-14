@@ -1,11 +1,9 @@
 import { graphql, HeadProps, Link } from 'gatsby';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 import { Fade } from 'react-swift-reveal';
+import { useTranslation } from '../hooks/useTranslation';
 
 import Header from '../components/Header';
-
-import '../style/main.scss';
 
 const Page404 = () => {
   const { t } = useTranslation();
@@ -24,7 +22,7 @@ const Page404 = () => {
             </h1>
             <p className="hero-cta">
               <Link className="cta-btn cta-btn--hero" to="/">
-                {t('404.goBack')}
+                {t('404.goHome')}
               </Link>
             </p>
           </Fade>
@@ -55,20 +53,6 @@ export const Head: React.FC<HeadProps> = (props) => {
 
 export const query = graphql`
   query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    headLocales: allLocale(filter: { ns: { eq: "head" }, language: { eq: $language } }) {
-      nodes {
-        data
-        language
-      }
-    }
+    ...Locales
   }
 `;

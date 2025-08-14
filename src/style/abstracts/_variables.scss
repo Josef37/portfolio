@@ -16,3 +16,9 @@ $dark-blue-text: #272341; // For Headings
 $default-font-size: 1.6rem;
 $big-font-size: 4rem;
 $mid-font-size: 2.5rem;
+
+// Gatsby path prefix (variable set in `gatsby-config`).
+$path-prefix: "" !default;
+@function url-with-prefix($url) {
+  @return url(#{$path-prefix}#{$url});
+}

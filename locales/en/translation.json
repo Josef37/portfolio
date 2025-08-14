@@ -2,11 +2,10 @@
   "404": {
     "notFound": "Page not found",
     "message": "Sorry, this page does not exist",
-    "goBack": "Go back"
+    "goHome": "To the homepage"
   },
   "about": {
     "text": "I'm a Bachelor of Science in Mathematics, with a minor in Computer Science.\nI have a love for problem solving and computers. That's how I ranked high in many national championships (in Mathematics and Computer Science).\nI've been working as a web developer for a few years now, trying to write good code.",
-    "resumeUrl": "/resume.pdf",
     "resume": "Résumé",
     "title": "About Me"
   },
@@ -89,6 +88,74 @@
         "info2": "Using Dinic's algorithm and the max-flow min-cut theorem.",
         "repoURL": "https://github.com/Josef37/screeps-min-cut-wall"
       }
+    }
+  },
+  "resume": {
+    "subtitle": "Software Developer",
+    "aside": {
+      "info": "Info",
+      "address": "Address",
+      "germany": "Germany",
+      "email": "Email",
+      "website": "Website"
+    },
+    "main": {
+      "professional-experience": "Professional Experience",
+      "education": "Education",
+      "competitions": "Competitions",
+      "present": "present",
+      "career-break": {
+        "title": "Career Break",
+        "location": "Health Issues",
+        "text": "Had to figure out a health issue that resulted in me being very tired and fatigued. Traveled by bike through Germany after being well again."
+      },
+      "ampeers": {
+        "title": "Backend Developer",
+        "location": "Ampeers Energy GmbH",
+        "text": "Main task: Migrating a JavaScript/REST/OracleDB backend service to TypeScript/GraphQL/ArangoDB. Planning, implementing and testing."
+      },
+      "cosuno-lead": {
+        "title": "Lead Full Stack Developer",
+        "location": "Cosuno Ventures GmbH",
+        "text": "Apart from developing, I was responsible for discussing new features with product and design, making architectural decisions, reviewing code and unblocking and onboarding team members."
+      },
+      "cosuno": {
+        "title": "Full Stack Developer",
+        "location": "Cosuno Ventures GmbH",
+        "text": "Start-up: SaaS for managing construction projects. I was building and testing full features (frontend and backend) in TypeScript in an agile team."
+      },
+      "qaware": {
+        "title": "Working Student",
+        "location": "QAware GmbH",
+        "text": "Maintenance of a Java web application for the security checking process for Telekom projects. My tasks were mostly frontend centered, but also involved some bug-fixing on the Java backend."
+      },
+      "createrawvision": {
+        "title": "WordPress Developer",
+        "location": "CreateRawVision",
+        "text": "Building and maintaining a WordPress Website for more than 100\u00a0members. Notable features: Members area and integration to a custom payment gateway."
+      },
+      "tum": {
+        "title": "B.Sc. Mathematics major, Computer Science minor",
+        "location": "Technical University of Munich",
+        "text": "Final grade: 1.9. Main focus: Optimization & Algorithms"
+      },
+      "wg": {
+        "title": "Abitur / A-Levels",
+        "location": "Willibald-Gymnasium Eichstätt",
+        "text": "Final grade: 1.4"
+      },
+      "lwmb": {
+        "title": "Winner in state-wide mathematical championship",
+        "location": "Landeswettbewerb Mathematik Bayern"
+      },
+      "bwinf": {
+        "title": "Top 100 in national computer science championship",
+        "location": "Bundeswettbewerb Informatik"
+      }
+    },
+    "print": {
+      "text": "You can print me!",
+      "button": "Print"
     }
   }
 }

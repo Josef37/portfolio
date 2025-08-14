@@ -1,6 +1,9 @@
+@use "sass:math";
+@use "../abstracts/mixins";
+
 html {
-  // Makes `1rem == 10px`
-  font-size: 62.5%;
+  // Makes `1rem == 10px` for default font-size of `16px`.
+  font-size: math.div(10px, 16px) * 100%;
 }
 
 body {
@@ -21,4 +24,14 @@ h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
+}
+
+section {
+  padding: 5rem 0rem;
+
+  @include mixins.phone {
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

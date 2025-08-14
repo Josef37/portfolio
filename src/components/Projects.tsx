@@ -1,5 +1,5 @@
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
+import { useTranslation } from '../hooks/useTranslation';
 import Project from './Project';
 import Title from './Title';
 

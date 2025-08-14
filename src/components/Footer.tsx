@@ -1,9 +1,9 @@
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faAngleUp, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 import { Link } from 'react-scroll';
+import { useTranslation } from '../hooks/useTranslation';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();

@@ -2,13 +2,12 @@
   "404": {
     "notFound": "Seite nicht gefunden",
     "message": "Entschuldigung, diese Seite existiert nicht",
-    "goBack": "Zurück"
+    "goHome": "Zur Startseite"
   },
   "about": {
     "title": "Über Mich",
     "text": "Ich bin Bachelor of Science in Mathematik, mit Nebenfach Informatik.\nIch liebe es Dinge auszutüfteln - gerne mithilfe meines Rechners. Damit habe ich in Landes- und Bundeswettbewerben Mathematik und Informatik ziemlich gut abgeschnitten.\nNun arbeite ich seit einigen Jahren als Webentwickler und versuche, guten Code zu schreiben.",
-    "resumeUrl": "/resume.pdf",
-    "resume": "Lebenslauf (Englisch)"
+    "resume": "Lebenslauf"
   },
   "contact": {
     "cta": "Möchten Sie mit mir zusammenarbeiten?",
@@ -65,7 +64,7 @@
       },
       "mailchimp": {
         "img": "mailchimp-cleaning.jpg",
-        "title": "Inaktive Mailchimp Abonnenten Bereinigen",
+        "title": "Inaktive MailChimp Abonnenten Bereinigen",
         "info": "Entfernt inaktive Abonnenten, indem eine Kampagne mit einem Bestätigungslink an markierte Abonnenten gesendet wird.",
         "repoURL": "https://github.com/Josef37/mailchimp-subscriber-cleaning"
       },
@@ -89,6 +88,74 @@
         "info2": "Verwendet den Algorithmus von Dinic und das Max-Flow-Min-Cut-Theorem.",
         "repoURL": "https://github.com/Josef37/screeps-min-cut-wall"
       }
+    }
+  },
+  "resume": {
+    "subtitle": "Software-Entwickler",
+    "aside": {
+      "germany": "Deutschland",
+      "address": "Adresse",
+      "info": "Info",
+      "email": "E-Mail",
+      "website": "Webseite"
+    },
+    "main": {
+      "professional-experience": "Berufserfahrung",
+      "education": "Bildung",
+      "competitions": "Wettbewerbe",
+      "present": "heute",
+      "career-break": {
+        "title": "Berufliche Auszeit",
+        "location": "Gesundheitliche Probleme",
+        "text": "Auszeit wegen starker Erschöpfung und Müdigkeit verursacht durch eine körperliche Erkrankung. Nachdem ich wieder fit war, bin ich mit dem Fahrrad durch Deutschland geradelt."
+      },
+      "ampeers": {
+        "title": "Backend-Entwickler",
+        "location": "Ampeers Energy GmbH",
+        "text": "Hauptaufgabe: Migration eines JavaScript/REST/OracleDB Backend Services zu TypeScript/GraphQL/ArangoDB. Planung, Implementierung und Testen."
+      },
+      "cosuno-lead": {
+        "title": "Lead Full-Stack-Entwickler",
+        "location": "Cosuno Ventures GmbH",
+        "text": "Neben Entwicklungsaufgaben war ich dafür verantwortlich, neue Features mit Product und Design zu besprechen, Architekturentscheidungen zu treffen, Code-Reviews zu machen und Teammitglieder zu unterstützen."
+      },
+      "cosuno": {
+        "title": "Full-Stack-Entwickler",
+        "location": "Cosuno Ventures GmbH",
+        "text": "Start-up: SaaS für Bauausschreibungen. Ich entwickelte und testete Frontend- und Backend-Code in TypeScript in einem agilen Team."
+      },
+      "qaware": {
+        "title": "Werkstudent",
+        "location": "QAware GmbH",
+        "text": "Betreuung einer Java-Webanwendung für den Sicherheitsprüfungsprozess von Telekom-Projekten. Meine Aufgaben waren größtenteils Frontend-fokussiert, aber beinhalteten auch Bugfixes im Java-Backend."
+      },
+      "createrawvision": {
+        "title": "WordPress-Entwickler",
+        "location": "CreateRawVision",
+        "text": "Entwicklung und Wartung einer WordPress-Website für mehr als 100\u00a0Mitglieder. Erwähnenswerte Features: Ein Mitgliederbereich und eine Integration in eine kundenspezifische Zahlungsschnittstelle."
+      },
+      "tum": {
+        "title": "B.Sc. Mathematik, Nebenfach Informatik",
+        "location": "Technische Universität München",
+        "text": "Abschlussnote: 1,9. Hauptfokus: Optimierung & Algorithmen"
+      },
+      "wg": {
+        "title": "Abitur",
+        "location": "Willibald-gymnasium Eichstätt",
+        "text": "Abschlussnote: 1,4"
+      },
+      "lwmb": {
+        "title": "Landessieger Landeswettbewerb Mathematik",
+        "location": "Landeswettbewerb Mathematik Bayern"
+      },
+      "bwinf": {
+        "title": "Top 100 im Bundeswettbewerb Informatik",
+        "location": "Bundeswettbewerb Informatik"
+      }
+    },
+    "print": {
+      "button": "Drucken",
+      "text": "Sie können diese Seite auch ausdrucken!"
     }
   }
 }

@@ -8,8 +8,6 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 
-import '../style/main.scss';
-
 const PageIndex: React.FC = () => (
   <>
     <Header />
@@ -42,20 +40,6 @@ export const Head: React.FC<HeadProps> = (props) => {
 
 export const query = graphql`
   query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    headLocales: allLocale(filter: { ns: { eq: "head" }, language: { eq: $language } }) {
-      nodes {
-        data
-        language
-      }
-    }
+    ...Locales
   }
 `;
