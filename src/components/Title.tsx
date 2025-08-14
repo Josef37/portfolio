@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade } from 'react-swift-reveal';
+import Fade from './Fade';
 
 const Title: React.FC<React.PropsWithChildren> = ({ children }) => (
   <Fade duration={1000}>
