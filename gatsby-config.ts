@@ -1,5 +1,5 @@
 import type { GatsbyConfig } from 'gatsby';
-import type { PluginOptions as I18NextPluginOptions } from 'gatsby-plugin-react-i18next';
+import type { PluginOptions as I18NextPluginOptions } from 'gatsby-plugin-react-i18next/dist/types';
 
 const pathPrefix = undefined;
 // We can build with or without `--prefix-paths`, even though the option is set here.
@@ -63,9 +63,9 @@ const config: GatsbyConfig = {
             escapeValue: false, // not needed for react as it escapes by default
           },
         },
-        pathTranslations: {
-          de: { '/resume/': '/lebenslauf/' },
-        },
+        // pathTranslations: {
+        //   de: { '/resume/': '/lebenslauf/' },
+        // },
       } satisfies Partial<I18NextPluginOptions>,
     },
 
