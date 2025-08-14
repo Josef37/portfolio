@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fade } from 'react-swift-reveal';
+import Fade from './Fade';
 import { useTranslation } from '../hooks/useTranslation';
 import Title from './Title';
 

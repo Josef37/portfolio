@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-scroll';
-import { Fade } from 'react-swift-reveal';
+import Fade from './Fade';
 import useIsMobile from '../hooks/useIsMobile';
 import { useTranslation } from '../hooks/useTranslation';
 

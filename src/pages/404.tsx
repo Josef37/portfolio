@@ -1,6 +1,6 @@
 import { graphql, HeadProps, Link } from 'gatsby';
 import React from 'react';
-import { Fade } from 'react-swift-reveal';
+import Fade from '../components/Fade';
 import { useTranslation } from '../hooks/useTranslation';
 
 import Header from '../components/Header';

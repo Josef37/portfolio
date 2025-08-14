@@ -1,6 +1,6 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
-import { Fade } from 'react-swift-reveal';
+import Fade from './Fade';
 import useIsMobile from '../hooks/useIsMobile';
 import { useTranslation } from '../hooks/useTranslation';
 import ProjectImage from './ProjectImage';
